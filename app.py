@@ -67,7 +67,7 @@ def progress_callback(step, total, msg):
 
 
 def run_scrape_task():
-    """Run scraping in background thread using Playwright-based scraper."""
+    """Run scraping. Cloud: reload JSON only. Local: full Playwright scrape."""
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
     with scrape_lock:
@@ -75,22 +75,37 @@ def run_scrape_task():
             return
         scrape_state['running'] = True
         scrape_state['progress'] = 0
-        scrape_state['message'] = '開始抓取資料...'
+        scrape_state['message'] = '開始更新資料...'
 
     try:
         if IS_CLOUD:
-            # ── Cloud mode: Playwright scrapes on the cloud server ──
-            scraper_path = os.path.join(base_dir, 'fix_dt_sc_playwright.py')
+            # ── Cloud mode: just reload the committed products.json ──
             with scrape_lock:
-                scrape_state['progress'] = 10
-                scrape_state['message'] = '☁️ 雲端抓取中（約 15 分鐘）...'
-        else:
-            # ── Local mode: same Playwright scraper ──
-            scraper_path = os.path.join(base_dir, 'fix_dt_sc_playwright.py')
-            with scrape_lock:
-                scrape_state['progress'] = 10
-                scrape_state['message'] = '🖥️ 本地抓取 Device Type & Sub Category...'
+                scrape_state['progress'] = 50
+                scrape_state['message'] = '☁️ 雲端模式：載入最新資料...'
 
+            with open(PRODUCTS_FILE, encoding='utf-8') as f:
+                final_data = json.load(f)
+            n_products  = len(final_data.get('products', []))
+            n_companies = len(set(p['company'] for p in final_data.get('products', [])))
+
+            with scrape_lock:
+                scrape_state['running'] = False
+                scrape_state['last_run'] = datetime.now().isoformat()
+                scrape_state['last_status'] = 'success'
+                scrape_state['progress'] = 100
+                scrape_state['message'] = (
+                    f"✅ 已載入：{n_products} 個產品 / {n_companies} 家公司"
+                    f"（在 Mac 執行後推送 GitHub 即可更新）"
+                )
+            logger.info("Cloud mode: data reloaded from JSON")
+            return
+
+        # ── Local mode: full Playwright scrape ──
+        with scrape_lock:
+            scrape_state['progress'] = 10
+            scrape_state['message'] = '🖥️ 本地抓取 Device Type & Sub Category...'
+        scraper_path = os.path.join(base_dir, 'fix_dt_sc_playwright.py')
         result = subprocess.run(
             ['python3', scraper_path],
             cwd=base_dir, capture_output=True, text=True, timeout=1800

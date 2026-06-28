@@ -2,16 +2,9 @@ services:
   - type: web
     name: thread-certified-products
     runtime: python
-    region: singapore        # 亞洲區，台灣訪問速度快
+    region: singapore
     plan: free
-    buildCommand: >-
-      pip install -r requirements.txt &&
-      apt-get update -qq &&
-      apt-get install -yq --no-install-recommends
-      libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2
-      libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3
-      libxrandr2 libgbm1 libasound2 libpango-1.0-0 libpangocairo-1.0-0 &&
-      python -m playwright install chromium
+    buildCommand: pip install -r requirements-cloud.txt
     startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
     healthCheckPath: /api/status
     envVars:
