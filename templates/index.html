@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thread Group Certified Products Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+/* ─── RESET & BASE ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #070d1a;
+  --surface:    #0d1628;
+  --surface2:   #111e35;
+  --border:     #1c2d4a;
+  --border2:    #243a5e;
+  --blue:       #1d6aff;
+  --blue-light: #3d84ff;
+  --blue-glow:  rgba(29,106,255,0.25);
+  --green:      #00c896;
+  --amber:      #f5a623;
+  --red:        #ff4d6d;
+  --purple:     #8b5cf6;
+  --text:       #e2eaf7;
+  --text-muted: #6b82a8;
+  --text-dim:   #3a4f6e;
+  --radius:     12px;
+  --shadow:     0 4px 24px rgba(0,0,0,0.4);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ─── SCROLLBAR ─────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--blue); }
+
+/* ─── LAYOUT ────────────────────────────────────────────── */
+.app { display: flex; min-height: 100vh; }
+
+/* ─── SIDEBAR ───────────────────────────────────────────── */
+.sidebar {
+  width: 220px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  z-index: 100;
+  padding: 0 0 24px;
+}
+.sidebar-logo {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-logo .logo-icon {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--blue), #a855f7);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; margin-bottom: 10px;
+}
+.sidebar-logo h2 { font-size: 13px; font-weight: 700; color: var(--text); }
+.sidebar-logo p  { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+
+.nav-section { padding: 16px 12px 4px; }
+.nav-section-label {
+  font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1px;
+  color: var(--text-dim); padding: 0 8px; margin-bottom: 6px;
+}
+.nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 10px; border-radius: 8px;
+  color: var(--text-muted); font-size: 13px; font-weight: 500;
+  cursor: pointer; transition: all 0.15s; margin-bottom: 2px;
+  text-decoration: none;
+}
+.nav-item:hover, .nav-item.active {
+  background: rgba(29,106,255,0.12);
+  color: var(--blue-light);
+}
+.nav-item .icon { font-size: 16px; width: 20px; text-align: center; }
+
+.sidebar-bottom {
+  margin-top: auto; padding: 16px;
+  border-top: 1px solid var(--border);
+}
+.status-indicator {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--text-muted);
+}
+.status-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green);
+  flex-shrink: 0;
+}
+.status-dot.running { background: var(--amber); box-shadow: 0 0 6px var(--amber); animation: pulse 1s infinite; }
+.status-dot.error   { background: var(--red);   box-shadow: 0 0 6px var(--red); }
+
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+
+/* ─── MAIN CONTENT ──────────────────────────────────────── */
+.main {
+  margin-left: 220px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ─── TOP BAR ───────────────────────────────────────────── */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 28px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 90;
+  gap: 16px;
+}
+.topbar-left { display: flex; flex-direction: column; }
+.page-title  { font-size: 20px; font-weight: 700; }
+.page-subtitle { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.topbar-right { display: flex; align-items: center; gap: 12px; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 8px 16px; border-radius: 8px;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer; border: none; transition: all 0.2s;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(29,106,255,0.35);
+}
+.btn-primary:hover { background: var(--blue-light); transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+.btn-secondary {
+  background: var(--surface2);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover { border-color: var(--blue); color: var(--blue-light); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none !important; }
+
+.last-updated {
+  font-size: 11px; color: var(--text-muted);
+  background: var(--surface2); border: 1px solid var(--border);
+  padding: 6px 12px; border-radius: 6px;
+}
+
+/* ─── CONTENT AREA ──────────────────────────────────────── */
+.content { padding: 24px 28px; flex: 1; }
+
+/* ─── PROGRESS BAR ──────────────────────────────────────── */
+.progress-bar-wrap {
+  display: none;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 20px; margin-bottom: 20px;
+}
+.progress-bar-wrap.visible { display: block; }
+.progress-info { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.progress-msg { font-size: 13px; color: var(--text-muted); }
+.progress-pct { font-size: 13px; font-weight: 700; color: var(--blue-light); }
+.progress-track {
+  height: 6px; background: var(--border);
+  border-radius: 3px; overflow: hidden;
+}
+.progress-fill {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--blue), #a855f7);
+  border-radius: 3px; transition: width 0.4s ease;
+}
+
+/* ─── STATS CARDS ───────────────────────────────────────── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px; margin-bottom: 24px;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  position: relative; overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.stat-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+.stat-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--accent, var(--blue));
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.stat-card[data-accent="green"]  { --accent: var(--green); }
+.stat-card[data-accent="amber"]  { --accent: var(--amber); }
+.stat-card[data-accent="purple"] { --accent: var(--purple); }
+.stat-icon { font-size: 22px; margin-bottom: 12px; }
+.stat-num {
+  font-size: 32px; font-weight: 800;
+  color: var(--text); line-height: 1;
+}
+.stat-label {
+  font-size: 12px; color: var(--text-muted);
+  margin-top: 6px; font-weight: 500;
+}
+.stat-change {
+  font-size: 11px; color: var(--green);
+  margin-top: 4px;
+}
+
+/* ─── CHARTS GRID ───────────────────────────────────────── */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 20px; margin-bottom: 24px;
+}
+.charts-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px; margin-bottom: 24px;
+}
+.chart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.chart-title {
+  font-size: 14px; font-weight: 600; color: var(--text);
+  margin-bottom: 4px;
+}
+.chart-subtitle {
+  font-size: 11px; color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.chart-canvas-wrap { position: relative; }
+
+/* ─── FILTER BAR ────────────────────────────────────────── */
+.filter-bar {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 16px; flex-wrap: wrap;
+}
+.search-box {
+  flex: 1; min-width: 220px;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 14px;
+  color: var(--text); font-size: 13px; outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+.search-box:focus { border-color: var(--blue); }
+.search-box::placeholder { color: var(--text-dim); }
+
+select.filter-select {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 12px;
+  color: var(--text); font-size: 13px; outline: none;
+  font-family: inherit; cursor: pointer;
+  transition: border-color 0.2s;
+}
+select.filter-select:focus { border-color: var(--blue); }
+select.filter-select option { background: var(--surface2); }
+
+.filter-badge {
+  font-size: 12px; color: var(--text-muted);
+  background: var(--surface2); border: 1px solid var(--border);
+  padding: 4px 10px; border-radius: 20px;
+}
+
+/* ─── TABLE ─────────────────────────────────────────────── */
+.table-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden; margin-bottom: 24px;
+}
+.table-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px; border-bottom: 1px solid var(--border);
+}
+.table-header h3 { font-size: 15px; font-weight: 600; }
+.table-wrap { overflow-x: auto; max-height: 560px; overflow-y: auto; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead th {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--surface2);
+  padding: 12px 16px; text-align: left;
+  font-weight: 600; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.6px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  cursor: pointer; user-select: none;
+  white-space: nowrap;
+}
+thead th:hover { color: var(--blue-light); }
+thead th .sort-icon { margin-left: 4px; opacity: 0.4; }
+thead th.sort-asc .sort-icon::after  { content: '↑'; opacity: 1; }
+thead th.sort-desc .sort-icon::after { content: '↓'; opacity: 1; }
+
+tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+tbody tr:hover { background: rgba(29,106,255,0.05); }
+tbody td { padding: 10px 16px; color: var(--text); }
+tbody td.company { font-weight: 500; }
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px; border-radius: 10px;
+  font-size: 11px; font-weight: 600;
+  white-space: nowrap;
+}
+.tag-bot  { background: rgba(29,106,255,0.15); color: #60a5fa; border: 1px solid rgba(29,106,255,0.3); }
+.tag-tcc  { background: rgba(245,166,35,0.15); color: #fbbf24; border: 1px solid rgba(245,166,35,0.3); }
+.tag-dt   { background: rgba(0,200,150,0.12);  color: #34d399; border: 1px solid rgba(0,200,150,0.25); }
+.tag-sc   { background: rgba(139,92,246,0.12); color: #a78bfa; border: 1px solid rgba(139,92,246,0.25); }
+.tag-na   { background: rgba(100,116,139,0.1); color: #64748b; border: 1px solid rgba(100,116,139,0.2); }
+
+.pagination {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 20px; border-top: 1px solid var(--border);
+  font-size: 12px; color: var(--text-muted);
+}
+.page-btns { display: flex; gap: 6px; }
+.page-btn {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 6px; padding: 5px 10px;
+  color: var(--text-muted); cursor: pointer; font-size: 12px;
+  transition: all 0.15s;
+}
+.page-btn:hover, .page-btn.active {
+  background: var(--blue); border-color: var(--blue); color: #fff;
+}
+.page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ─── NO DATA EMPTY STATE ───────────────────────────────── */
+.empty-state {
+  text-align: center; padding: 60px 20px;
+  color: var(--text-muted);
+}
+.empty-state .empty-icon { font-size: 48px; margin-bottom: 16px; opacity: 0.5; }
+.empty-state h3 { font-size: 18px; margin-bottom: 8px; color: var(--text); }
+.empty-state p  { font-size: 14px; max-width: 360px; margin: 0 auto 20px; }
+
+/* ─── TABS ──────────────────────────────────────────────── */
+.tabs { display: flex; gap: 2px; margin-bottom: 20px; }
+.tab-btn {
+  padding: 8px 20px; border-radius: 8px;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer; border: 1px solid transparent;
+  color: var(--text-muted); background: none;
+  font-family: inherit; transition: all 0.15s;
+}
+.tab-btn.active {
+  background: rgba(29,106,255,0.15);
+  border-color: rgba(29,106,255,0.4);
+  color: var(--blue-light);
+}
+.tab-btn:hover:not(.active) { color: var(--text); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ─── SECTION HEADER ────────────────────────────────────── */
+.section { margin-bottom: 28px; }
+.section-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-size: 16px; font-weight: 700;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-title .dot {
+  width: 4px; height: 16px;
+  background: linear-gradient(180deg, var(--blue), #a855f7);
+  border-radius: 2px;
+}
+
+/* ─── TOAST ─────────────────────────────────────────────── */
+.toast-container {
+  position: fixed; bottom: 24px; right: 24px;
+  display: flex; flex-direction: column; gap: 8px; z-index: 999;
+}
+.toast {
+  background: var(--surface2); border: 1px solid var(--border2);
+  border-radius: 10px; padding: 12px 16px;
+  font-size: 13px; color: var(--text);
+  box-shadow: var(--shadow);
+  display: flex; align-items: center; gap: 10px;
+  min-width: 280px; max-width: 380px;
+  animation: slideIn 0.3s ease;
+}
+.toast.success { border-left: 3px solid var(--green); }
+.toast.error   { border-left: 3px solid var(--red); }
+.toast.info    { border-left: 3px solid var(--blue); }
+@keyframes slideIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+
+/* ─── COMPANY CARDS VIEW ────────────────────────────────── */
+.company-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.company-card {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 16px;
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.company-card:hover { border-color: var(--blue); transform: translateY(-2px); }
+.company-card-name { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.company-card-count {
+  font-size: 24px; font-weight: 800; color: var(--blue-light);
+  margin-bottom: 8px;
+}
+.company-card-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+/* ─── RESPONSIVE ────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .charts-grid { grid-template-columns: 1fr; }
+  .charts-grid-3 { grid-template-columns: 1fr 1fr; }
+}
+/* Mobile bottom navigation */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 60px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  z-index: 300;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 0;
+  backdrop-filter: blur(12px);
+}
+.mobile-nav-btn {
+  background: none; border: none;
+  color: var(--text-muted);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 6px 4px; flex: 1; gap: 3px;
+  cursor: pointer; font-size: 20px;
+  transition: color .2s;
+}
+.mobile-nav-btn span { font-size: 10px; font-family: 'Inter', sans-serif; font-weight: 500; }
+.mobile-nav-btn.active { color: var(--blue); }
+.mobile-nav-btn.active span { color: var(--blue); }
+
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .main { margin-left: 0; padding-bottom: 72px; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .mobile-nav { display: flex; }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .charts-grid { grid-template-columns: 1fr; }
+  .charts-grid-3 { grid-template-columns: 1fr; }
+  .section-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- ══ SIDEBAR ═══════════════════════════════════════════ -->
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon">🧵</div>
+    <h2>Thread Group</h2>
+    <p>Certified Products</p>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">主要功能</div>
+    <a class="nav-item active" onclick="showTab('dashboard')">
+      <span class="icon">📊</span> Dashboard
+    </a>
+    <a class="nav-item" onclick="showTab('companies')">
+      <span class="icon">🏢</span> 公司列表
+    </a>
+    <a class="nav-item" onclick="showTab('products')">
+      <span class="icon">📦</span> 產品目錄
+    </a>
+    <a class="nav-item" onclick="showTab('charts')">
+      <span class="icon">📈</span> 分析圖表
+    </a>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">資料管理</div>
+    <a class="nav-item" onclick="showTab('settings')">
+      <span class="icon">⚙️</span> 設定 / 紀錄
+    </a>
+  </div>
+
+  <div class="sidebar-bottom">
+    <div class="status-indicator">
+      <div class="status-dot" id="sidebarDot"></div>
+      <span id="sidebarStatus">系統就緒</span>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ MAIN ══════════════════════════════════════════════ -->
+<div class="main">
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="page-title" id="pageTitle">Dashboard</div>
+      <div class="page-subtitle" id="pageSubtitle">Thread Group 認證產品總覽</div>
+    </div>
+    <div class="topbar-right">
+      <div class="last-updated" id="lastUpdated">尚未載入資料</div>
+      <button class="btn btn-secondary" onclick="downloadExcel()" id="btnDownload">
+        ⬇️ 下載 Excel
+      </button>
+      <button class="btn btn-primary" onclick="triggerRefresh()" id="btnRefresh">
+        🔄 更新資料
+      </button>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar-wrap" id="progressWrap">
+      <div class="progress-info">
+        <span class="progress-msg" id="progressMsg">正在抓取資料...</span>
+        <span class="progress-pct" id="progressPct">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <!-- ─── DASHBOARD TAB ──────────────────────────────── -->
+    <div class="tab-content active" id="tab-dashboard">
+
+      <!-- Stats -->
+      <div class="stats-grid" id="statsGrid">
+        <div class="stat-card">
+          <div class="stat-icon">🏢</div>
+          <div class="stat-num" id="statCompanies">—</div>
+          <div class="stat-label">認證公司</div>
+        </div>
+        <div class="stat-card" data-accent="green">
+          <div class="stat-icon">📦</div>
+          <div class="stat-num" id="statProducts">—</div>
+          <div class="stat-label">總產品數</div>
+        </div>
+        <div class="stat-card" data-accent="amber">
+          <div class="stat-icon">🔧</div>
+          <div class="stat-num" id="statDeviceTypes">—</div>
+          <div class="stat-label">Device Types</div>
+        </div>
+        <div class="stat-card" data-accent="purple">
+          <div class="stat-icon">🏷️</div>
+          <div class="stat-num" id="statSubCats">—</div>
+          <div class="stat-label">Sub Categories</div>
+        </div>
+      </div>
+
+      <!-- Charts row 1: Device Type + Product Type -->
+      <div class="charts-grid">
+        <div class="chart-card">
+          <div class="chart-title">Device Type 分布</div>
+          <div class="chart-subtitle">各設備類型認證產品數量</div>
+          <div class="chart-canvas-wrap" style="height:260px;">
+            <canvas id="chartDeviceType"></canvas>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Product Type 分布</div>
+          <div class="chart-subtitle">Built on Thread vs Thread Certified Component</div>
+          <div class="chart-canvas-wrap" style="height:260px;">
+            <canvas id="chartProductType"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Charts row 2: Top Companies + Sub Category -->
+      <div class="charts-grid">
+        <div class="chart-card">
+          <div class="chart-title">Top 15 公司（產品數量）</div>
+          <div class="chart-subtitle">擁有最多認證產品的公司</div>
+          <div class="chart-canvas-wrap" style="height:300px;">
+            <canvas id="chartTopCompanies"></canvas>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Sub Category 分布</div>
+          <div class="chart-subtitle">各子分類認證產品數量</div>
+          <div class="chart-canvas-wrap" style="height:300px;">
+            <canvas id="chartSubCategory"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tab-dashboard -->
+
+    <!-- ─── COMPANIES TAB ──────────────────────────────── -->
+    <div class="tab-content" id="tab-companies">
+      <div class="filter-bar">
+        <input class="search-box" id="companySearch" placeholder="🔍 搜尋公司名稱..."
+               oninput="filterCompanyTable()">
+        <select class="filter-select" id="filterDT" onchange="filterCompanyTable()">
+          <option value="">所有 Device Types</option>
+        </select>
+        <select class="filter-select" id="filterPT" onchange="filterCompanyTable()">
+          <option value="">所有 Product Types</option>
+          <option value="Built on Thread">Built on Thread</option>
+          <option value="Thread Certified Component">Thread Certified Component</option>
+        </select>
+        <div class="filter-badge" id="companyCountBadge">—</div>
+      </div>
+      <div class="table-card">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th onclick="sortCompanyTable(0)"># <span class="sort-icon"></span></th>
+                <th onclick="sortCompanyTable(1)">公司名稱 <span class="sort-icon"></span></th>
+                <th onclick="sortCompanyTable(2)">產品數 <span class="sort-icon"></span></th>
+                <th>Device Types</th>
+                <th>Product Types</th>
+              </tr>
+            </thead>
+            <tbody id="companyTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div><!-- /tab-companies -->
+
+    <!-- ─── PRODUCTS TAB ───────────────────────────────── -->
+    <div class="tab-content" id="tab-products">
+      <div class="filter-bar">
+        <input class="search-box" id="productSearch" placeholder="🔍 搜尋產品名稱或公司..."
+               oninput="filterProductTable()">
+        <select class="filter-select" id="prodFilterDT" onchange="filterProductTable()">
+          <option value="">所有 Device Types</option>
+        </select>
+        <select class="filter-select" id="prodFilterSC" onchange="filterProductTable()">
+          <option value="">所有 Sub Categories</option>
+        </select>
+        <select class="filter-select" id="prodFilterPT" onchange="filterProductTable()">
+          <option value="">所有 Product Types</option>
+          <option value="Built on Thread">Built on Thread</option>
+          <option value="Thread Certified Component">Thread Certified Component</option>
+        </select>
+        <div class="filter-badge" id="productCountBadge">—</div>
+      </div>
+      <div class="table-card">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th onclick="sortProductTable(1)">公司 <span class="sort-icon"></span></th>
+                <th onclick="sortProductTable(2)">產品名稱 <span class="sort-icon"></span></th>
+                <th>Product Type</th>
+                <th onclick="sortProductTable(4)">Device Type <span class="sort-icon"></span></th>
+                <th onclick="sortProductTable(5)">Sub Category <span class="sort-icon"></span></th>
+              </tr>
+            </thead>
+            <tbody id="productTableBody"></tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <span id="productPaginationInfo">— 筆資料</span>
+          <div class="page-btns" id="productPageBtns"></div>
+        </div>
+      </div>
+    </div><!-- /tab-products -->
+
+    <!-- ─── CHARTS TAB ─────────────────────────────────── -->
+    <div class="tab-content" id="tab-charts">
+      <div class="charts-grid-3">
+        <div class="chart-card">
+          <div class="chart-title">Device Type × Product Type</div>
+          <div class="chart-subtitle">分類矩陣</div>
+          <div class="chart-canvas-wrap" style="height:280px;">
+            <canvas id="chartMatrix"></canvas>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">公司產品數分布</div>
+          <div class="chart-subtitle">各產品數量的公司家數</div>
+          <div class="chart-canvas-wrap" style="height:280px;">
+            <canvas id="chartCompanyDist"></canvas>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Sub Category 詳細</div>
+          <div class="chart-subtitle">含數量的全部分類</div>
+          <div class="chart-canvas-wrap" style="height:280px;">
+            <canvas id="chartSCDetail"></canvas>
+          </div>
+        </div>
+      </div>
+    </div><!-- /tab-charts -->
+
+    <!-- ─── SETTINGS TAB ───────────────────────────────── -->
+    <div class="tab-content" id="tab-settings">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><div class="dot"></div>排程設定</div>
+        </div>
+        <div class="chart-card" style="max-width:600px;">
+          <p style="font-size:14px;color:var(--text-muted);margin-bottom:16px;">
+            系統已設定於每月最後一天 23:00 自動抓取最新資料，並發送 macOS 桌面通知。
+          </p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div>
+              <div style="font-size:12px;color:var(--text-dim);margin-bottom:4px;">下次自動更新</div>
+              <div style="font-size:15px;font-weight:600;" id="nextRunTime">載入中...</div>
+            </div>
+            <div>
+              <div style="font-size:12px;color:var(--text-dim);margin-bottom:4px;">最後更新時間</div>
+              <div style="font-size:15px;font-weight:600;" id="lastRunTime">載入中...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><div class="dot"></div>抓取紀錄</div>
+        </div>
+        <div class="table-card" style="max-width:700px;">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>時間</th><th>狀態</th><th>產品數</th><th>公司數</th>
+                </tr>
+              </thead>
+              <tbody id="logTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div><!-- /tab-settings -->
+
+  </div><!-- /content -->
+</div><!-- /main -->
+</div><!-- /app -->
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toastContainer"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════
+let allData = null;       // Full JSON from /api/data
+let companies = [];       // From /api/companies
+let filteredCompanies = [];
+let filteredProducts = [];
+let productPage = 1;
+const PAGE_SIZE = 50;
+let companySortCol = 2; let companySortAsc = false;
+let productSortCol = 1; let productSortAsc = true;
+let statusInterval = null;
+let charts = {};
+
+const CHART_COLORS = [
+  '#1d6aff','#00c896','#f5a623','#8b5cf6','#ff4d6d',
+  '#06b6d4','#84cc16','#f97316','#a855f7','#ec4899',
+  '#14b8a6','#eab308','#ef4444','#6366f1','#22d3ee',
+];
+
+// ═══════════════════════════════════════════════════════════
+// TABS
+// ═══════════════════════════════════════════════════════════
+const TAB_META = {
+  dashboard: { title: 'Dashboard', subtitle: 'Thread Group 認證產品總覽' },
+  companies:  { title: '公司列表', subtitle: '所有認證公司及其產品統計' },
+  products:   { title: '產品目錄', subtitle: '完整認證產品清單' },
+  charts:     { title: '分析圖表', subtitle: '深度資料視覺化分析' },
+  settings:   { title: '設定 / 紀錄', subtitle: '排程設定與抓取歷史紀錄' },
+};
+
+function showTab(tab) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  const tabEl = document.getElementById('tab-' + tab);
+  if (tabEl) tabEl.classList.add('active');
+  event && event.currentTarget && event.currentTarget.classList.add('active');
+  document.querySelector(`.nav-item[onclick="showTab('${tab}')"]`)?.classList.add('active');
+  document.getElementById('pageTitle').textContent = TAB_META[tab]?.title || tab;
+  document.getElementById('pageSubtitle').textContent = TAB_META[tab]?.subtitle || '';
+  if (tab === 'settings') loadLogs();
+  // Update mobile nav active state
+  document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
+  const mnavBtn = document.getElementById('mnav-' + tab);
+  if (mnavBtn) mnavBtn.classList.add('active');
+}
+
+// ═══════════════════════════════════════════════════════════
+// DATA LOADING
+// ═══════════════════════════════════════════════════════════
+async function loadData() {
+  try {
+    const [dataRes, compRes] = await Promise.all([
+      fetch('/api/data').then(r => r.ok ? r.json() : null),
+      fetch('/api/companies').then(r => r.json()),
+    ]);
+    if (dataRes) {
+      allData = dataRes;
+      companies = compRes;
+      filteredCompanies = [...companies];
+      updateStats(dataRes);
+      buildCharts(dataRes);
+      buildCompanyTable();
+      buildProductTable(dataRes.products);
+      populateFilters(dataRes.products);
+      const dt = new Date(dataRes.last_updated);
+      document.getElementById('lastUpdated').textContent =
+        '最後更新：' + dt.toLocaleString('zh-TW');
+    } else {
+      showEmptyState();
+    }
+  } catch(e) {
+    console.error('Load error:', e);
+  }
+}
+
+function showEmptyState() {
+  ['statCompanies','statProducts','statDeviceTypes','statSubCats'].forEach(id => {
+    document.getElementById(id).textContent = '0';
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+// STATS
+// ═══════════════════════════════════════════════════════════
+function updateStats(data) {
+  const products = data.products || [];
+  const companies = new Set(products.map(p => p.company));
+  const dts = new Set(products.filter(p => p.device_type !== '-').map(p => p.device_type));
+  const scs = new Set(products.filter(p => p.sub_category !== '-')
+    .flatMap(p => p.sub_category.split(', ')));
+  animateNum('statCompanies', companies.size);
+  animateNum('statProducts', products.length);
+  animateNum('statDeviceTypes', dts.size);
+  animateNum('statSubCats', scs.size);
+}
+
+function animateNum(id, target) {
+  const el = document.getElementById(id);
+  let current = 0;
+  const step = Math.ceil(target / 40);
+  const timer = setInterval(() => {
+    current = Math.min(current + step, target);
+    el.textContent = current.toLocaleString();
+    if (current >= target) clearInterval(timer);
+  }, 20);
+}
+
+// ═══════════════════════════════════════════════════════════
+// POPULATE FILTER DROPDOWNS
+// ═══════════════════════════════════════════════════════════
+function populateFilters(products) {
+  const dts = [...new Set(products.filter(p => p.device_type !== '-').map(p => p.device_type))].sort();
+  const scs = [...new Set(products.filter(p => p.sub_category !== '-')
+    .flatMap(p => p.sub_category.split(', ')))].sort();
+
+  const filterDT = document.getElementById('filterDT');
+  const prodFilterDT = document.getElementById('prodFilterDT');
+  const prodFilterSC = document.getElementById('prodFilterSC');
+
+  dts.forEach(dt => {
+    [filterDT, prodFilterDT].forEach(sel => {
+      const opt = document.createElement('option');
+      opt.value = dt; opt.textContent = dt;
+      sel.appendChild(opt);
+    });
+  });
+  scs.forEach(sc => {
+    const opt = document.createElement('option');
+    opt.value = sc; opt.textContent = sc;
+    prodFilterSC.appendChild(opt);
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+// CHARTS
+// ═══════════════════════════════════════════════════════════
+const CHART_OPTS = {
+  responsive: true, maintainAspectRatio: false,
+  plugins: {
+    legend: { labels: { color: '#6b82a8', font: { family: 'Inter', size: 11 } } },
+    tooltip: {
+      backgroundColor: '#0d1628',
+      borderColor: '#1c2d4a', borderWidth: 1,
+      titleColor: '#e2eaf7', bodyColor: '#6b82a8',
+      titleFont: { family: 'Inter', weight: '600' },
+      bodyFont: { family: 'Inter' },
+    },
+  },
+};
+
+function destroyChart(id) {
+  if (charts[id]) { charts[id].destroy(); delete charts[id]; }
+}
+
+function buildCharts(data) {
+  const products = data.products || [];
+
+  // 1. Device Type bar
+  const dtCounts = {};
+  products.forEach(p => {
+    if (p.device_type !== '-') {
+      dtCounts[p.device_type] = (dtCounts[p.device_type] || 0) + 1;
+    }
+  });
+  const dtSorted = Object.entries(dtCounts).sort((a,b) => b[1]-a[1]);
+  destroyChart('chartDeviceType');
+  charts['chartDeviceType'] = new Chart(document.getElementById('chartDeviceType'), {
+    type: 'bar',
+    data: {
+      labels: dtSorted.map(x=>x[0]),
+      datasets: [{
+        label: '產品數',
+        data: dtSorted.map(x=>x[1]),
+        backgroundColor: CHART_COLORS.slice(0, dtSorted.length),
+        borderRadius: 6, borderSkipped: false,
+      }],
+    },
+    options: {
+      ...CHART_OPTS,
+      plugins: { ...CHART_OPTS.plugins, legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#6b82a8', font: { family: 'Inter', size: 11 } }, grid: { color: '#1c2d4a' } },
+        y: { ticks: { color: '#6b82a8', font: { family: 'Inter', size: 11 } }, grid: { color: '#1c2d4a' } },
+      },
+    },
+  });
+
+  // 2. Product Type pie
+  const ptCounts = {};
+  products.forEach(p => { ptCounts[p.product_type] = (ptCounts[p.product_type]||0)+1; });
+  destroyChart('chartProductType');
+  charts['chartProductType'] = new Chart(document.getElementById('chartProductType'), {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(ptCounts),
+      datasets: [{ data: Object.values(ptCounts), backgroundColor: ['#1d6aff','#f5a623'], borderWidth: 0, hoverOffset: 8 }],
+    },
+    options: {
+      ...CHART_OPTS,
+      cutout: '65%',
+      plugins: {
+        ...CHART_OPTS.plugins,
+        legend: { position: 'bottom', labels: { color: '#6b82a8', font: { family:'Inter', size:11 }, padding: 16 } },
+      },
+    },
+  });
+
+  // 3. Top 15 companies
+  const coData = companies.slice(0,15);
+  destroyChart('chartTopCompanies');
+  charts['chartTopCompanies'] = new Chart(document.getElementById('chartTopCompanies'), {
+    type: 'bar',
+    data: {
+      labels: coData.map(c => c.name.length > 25 ? c.name.slice(0,23)+'…' : c.name),
+      datasets: [{
+        label: '產品數',
+        data: coData.map(c => c.total),
+        backgroundColor: '#1d6aff',
+        borderRadius: 4,
+      }],
+    },
+    options: {
+      ...CHART_OPTS,
+      indexAxis: 'y',
+      plugins: { ...CHART_OPTS.plugins, legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#6b82a8', font: { family:'Inter', size:10 } }, grid: { color: '#1c2d4a' } },
+        y: { ticks: { color: '#e2eaf7', font: { family:'Inter', size:10 } }, grid: { display: false } },
+      },
+    },
+  });
+
+  // 4. Sub Category
+  const scCounts = {};
+  products.forEach(p => {
+    if (p.sub_category && p.sub_category !== '-') {
+      p.sub_category.split(', ').forEach(sc => {
+        scCounts[sc] = (scCounts[sc]||0)+1;
+      });
+    }
+  });
+  const scSorted = Object.entries(scCounts).sort((a,b)=>b[1]-a[1]);
+  destroyChart('chartSubCategory');
+  charts['chartSubCategory'] = new Chart(document.getElementById('chartSubCategory'), {
+    type: 'bar',
+    data: {
+      labels: scSorted.map(x=>x[0]),
+      datasets: [{
+        label: '產品數',
+        data: scSorted.map(x=>x[1]),
+        backgroundColor: '#00c896',
+        borderRadius: 4,
+      }],
+    },
+    options: {
+      ...CHART_OPTS,
+      indexAxis: 'y',
+      plugins: { ...CHART_OPTS.plugins, legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#6b82a8', font: { family:'Inter', size:10 } }, grid: { color: '#1c2d4a' } },
+        y: { ticks: { color: '#e2eaf7', font: { family:'Inter', size:10 } }, grid: { display: false } },
+      },
+    },
+  });
+
+  // 5. Matrix chart (for Charts tab)
+  buildMatrixChart(products);
+
+  // 6. Company distribution chart
+  buildCompanyDistChart();
+
+  // 7. SC Detail (same as #4 but larger for charts tab)
+  buildSCDetailChart(scSorted);
+}
+
+function buildMatrixChart(products) {
+  const dts = [...new Set(products.filter(p=>p.device_type!=='-').map(p=>p.device_type))].sort();
+  const pts = ['Built on Thread','Thread Certified Component'];
+  const datasets = pts.map((pt, pi) => ({
+    label: pt,
+    data: dts.map(dt => products.filter(p=>p.device_type===dt && p.product_type===pt).length),
+    backgroundColor: pi===0 ? 'rgba(29,106,255,0.8)' : 'rgba(245,166,35,0.8)',
+    borderRadius: 4,
+  }));
+  destroyChart('chartMatrix');
+  charts['chartMatrix'] = new Chart(document.getElementById('chartMatrix'), {
+    type: 'bar',
+    data: { labels: dts, datasets },
+    options: {
+      ...CHART_OPTS,
+      scales: {
+        x: { stacked: true, ticks: { color:'#6b82a8', font:{family:'Inter',size:10} }, grid:{color:'#1c2d4a'} },
+        y: { stacked: true, ticks: { color:'#6b82a8', font:{family:'Inter',size:10} }, grid:{color:'#1c2d4a'} },
+      },
+      plugins: { ...CHART_OPTS.plugins, legend: { position:'bottom', labels:{color:'#6b82a8', font:{family:'Inter',size:10}} } },
+    },
+  });
+}
+
+function buildCompanyDistChart() {
+  // Distribution: how many companies have 1 product, 2 products, etc.
+  const freq = {};
+  companies.forEach(c => { const n=c.total; freq[n]=(freq[n]||0)+1; });
+  const keys = Object.keys(freq).map(Number).sort((a,b)=>a-b);
+  destroyChart('chartCompanyDist');
+  charts['chartCompanyDist'] = new Chart(document.getElementById('chartCompanyDist'), {
+    type: 'bar',
+    data: {
+      labels: keys.map(k => k===1 ? '1 個產品' : k===2 ? '2 個產品' : k + ' 個產品'),
+      datasets: [{ label:'公司家數', data: keys.map(k=>freq[k]), backgroundColor:'#8b5cf6', borderRadius:4 }],
+    },
+    options: {
+      ...CHART_OPTS,
+      plugins: { ...CHART_OPTS.plugins, legend: { display: false } },
+      scales: {
+        x: { ticks:{color:'#6b82a8',font:{family:'Inter',size:10}}, grid:{color:'#1c2d4a'} },
+        y: { ticks:{color:'#6b82a8',font:{family:'Inter',size:10}}, grid:{color:'#1c2d4a'} },
+      },
+    },
+  });
+}
+
+function buildSCDetailChart(scSorted) {
+  destroyChart('chartSCDetail');
+  charts['chartSCDetail'] = new Chart(document.getElementById('chartSCDetail'), {
+    type: 'bar',
+    data: {
+      labels: scSorted.map(x=>x[0]),
+      datasets: [{ label:'產品數', data: scSorted.map(x=>x[1]),
+        backgroundColor: scSorted.map((_,i)=>CHART_COLORS[i%CHART_COLORS.length]),
+        borderRadius: 4 }],
+    },
+    options: {
+      ...CHART_OPTS,
+      indexAxis: 'y',
+      plugins: { ...CHART_OPTS.plugins, legend:{display:false} },
+      scales: {
+        x: { ticks:{color:'#6b82a8',font:{family:'Inter',size:10}}, grid:{color:'#1c2d4a'} },
+        y: { ticks:{color:'#e2eaf7',font:{family:'Inter',size:10}}, grid:{display:false} },
+      },
+    },
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+// COMPANY TABLE
+// ═══════════════════════════════════════════════════════════
+function buildCompanyTable() {
+  filteredCompanies = [...companies];
+  renderCompanyTable();
+}
+
+function filterCompanyTable() {
+  const q = document.getElementById('companySearch').value.toLowerCase();
+  const dt = document.getElementById('filterDT').value;
+  const pt = document.getElementById('filterPT').value;
+  filteredCompanies = companies.filter(c => {
+    if (q && !c.name.toLowerCase().includes(q)) return false;
+    if (dt && !c.device_types.includes(dt)) return false;
+    if (pt && !c.product_types.includes(pt)) return false;
+    return true;
+  });
+  renderCompanyTable();
+}
+
+function sortCompanyTable(col) {
+  if (companySortCol === col) companySortAsc = !companySortAsc;
+  else { companySortCol = col; companySortAsc = true; }
+  const getVal = (c) => col===1 ? c.name : col===2 ? c.total : 0;
+  filteredCompanies.sort((a,b) => {
+    const va=getVal(a), vb=getVal(b);
+    return companySortAsc ? (va>vb?1:-1) : (va<vb?1:-1);
+  });
+  renderCompanyTable();
+}
+
+function renderCompanyTable() {
+  const tbody = document.getElementById('companyTableBody');
+  tbody.innerHTML = '';
+  document.getElementById('companyCountBadge').textContent = `${filteredCompanies.length} 家公司`;
+  if (!filteredCompanies.length) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--text-muted);padding:32px;">無符合條件的公司</td></tr>';
+    return;
+  }
+  filteredCompanies.forEach((c, i) => {
+    const tr = document.createElement('tr');
+    const ptTags = c.product_types.map(pt =>
+      `<span class="tag ${pt==='Built on Thread'?'tag-bot':'tag-tcc'}">${pt==='Built on Thread'?'BOT':'TCC'}</span>`
+    ).join(' ');
+    const dtTags = c.device_types.slice(0,3).map(dt =>
+      `<span class="tag tag-dt" style="margin:1px;">${dt}</span>`
+    ).join('') + (c.device_types.length>3 ? `<span class="tag tag-na">+${c.device_types.length-3}</span>`:'');
+    tr.innerHTML = `
+      <td>${i+1}</td>
+      <td class="company">${c.name}</td>
+      <td style="text-align:center;font-weight:700;color:var(--blue-light);">${c.total}</td>
+      <td>${dtTags}</td>
+      <td>${ptTags}</td>
+    `;
+    tr.onclick = () => showCompanyProducts(c.name);
+    tbody.appendChild(tr);
+  });
+}
+
+function showCompanyProducts(company) {
+  // Switch to products tab with company filter
+  showTab('products');
+  document.getElementById('productSearch').value = company;
+  filterProductTable();
+}
+
+// ═══════════════════════════════════════════════════════════
+// PRODUCT TABLE
+// ═══════════════════════════════════════════════════════════
+function buildProductTable(products) {
+  filteredProducts = [...(products||[])];
+  productPage = 1;
+  renderProductTable();
+}
+
+function filterProductTable() {
+  if (!allData) return;
+  const q   = document.getElementById('productSearch').value.toLowerCase();
+  const dt  = document.getElementById('prodFilterDT').value;
+  const sc  = document.getElementById('prodFilterSC').value;
+  const pt  = document.getElementById('prodFilterPT').value;
+  filteredProducts = allData.products.filter(p => {
+    if (q && !p.product_name.toLowerCase().includes(q) && !p.company.toLowerCase().includes(q)) return false;
+    if (dt && p.device_type !== dt) return false;
+    if (sc && !p.sub_category.includes(sc)) return false;
+    if (pt && p.product_type !== pt) return false;
+    return true;
+  });
+  productPage = 1;
+  renderProductTable();
+}
+
+function sortProductTable(col) {
+  if (productSortCol === col) productSortAsc = !productSortAsc;
+  else { productSortCol = col; productSortAsc = true; }
+  const getVal = (p) => [0, p.company, p.product_name, p.product_type, p.device_type, p.sub_category][col] || '';
+  filteredProducts.sort((a,b) => {
+    const va=getVal(a), vb=getVal(b);
+    return productSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+  });
+  renderProductTable();
+}
+
+function renderProductTable() {
+  const tbody = document.getElementById('productTableBody');
+  tbody.innerHTML = '';
+  const total = filteredProducts.length;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  productPage = Math.min(productPage, totalPages);
+  const start = (productPage-1)*PAGE_SIZE;
+  const page = filteredProducts.slice(start, start+PAGE_SIZE);
+
+  document.getElementById('productCountBadge').textContent = `${total} 個產品`;
+  document.getElementById('productPaginationInfo').textContent =
+    `顯示第 ${start+1}–${Math.min(start+PAGE_SIZE,total)} 筆，共 ${total} 筆`;
+
+  page.forEach((p, i) => {
+    const tr = document.createElement('tr');
+    const ptTag = `<span class="tag ${p.product_type==='Built on Thread'?'tag-bot':'tag-tcc'}">
+      ${p.product_type==='Built on Thread'?'Built on Thread':'TCC'}</span>`;
+    const dtTag = p.device_type!=='-' ? `<span class="tag tag-dt">${p.device_type}</span>` : '<span class="tag tag-na">—</span>';
+    const scTag = p.sub_category!=='-' ? `<span class="tag tag-sc">${p.sub_category}</span>` : '<span class="tag tag-na">—</span>';
+    tr.innerHTML = `
+      <td>${start+i+1}</td>
+      <td class="company">${p.company}</td>
+      <td>${p.product_name}</td>
+      <td>${ptTag}</td>
+      <td>${dtTag}</td>
+      <td>${scTag}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Pagination buttons
+  const container = document.getElementById('productPageBtns');
+  container.innerHTML = '';
+  const addBtn = (label, page, disabled=false, active=false) => {
+    const btn = document.createElement('button');
+    btn.className = 'page-btn' + (active?' active':'');
+    btn.textContent = label; btn.disabled = disabled;
+    btn.onclick = () => { productPage = page; renderProductTable(); };
+    container.appendChild(btn);
+  };
+  addBtn('‹', productPage-1, productPage<=1);
+  const range = 2;
+  for (let p=1; p<=totalPages; p++) {
+    if (p===1 || p===totalPages || (p>=productPage-range && p<=productPage+range)) {
+      addBtn(p, p, false, p===productPage);
+    } else if (p===productPage-range-1 || p===productPage+range+1) {
+      addBtn('…', p, true);
+    }
+  }
+  addBtn('›', productPage+1, productPage>=totalPages);
+}
+
+// ═══════════════════════════════════════════════════════════
+// SCRAPE CONTROL
+// ═══════════════════════════════════════════════════════════
+async function triggerRefresh() {
+  const btn = document.getElementById('btnRefresh');
+  btn.disabled = true;
+  btn.textContent = '⏳ 請稍候...';
+
+  try {
+    const res = await fetch('/api/refresh', { method: 'POST' });
+    if (res.ok) {
+      showToast('info', '🔄 資料更新已開始！這可能需要 15-25 分鐘。');
+      startStatusPolling();
+    } else {
+      const data = await res.json();
+      showToast('error', '❌ ' + (data.error || '啟動失敗'));
+      btn.disabled = false; btn.textContent = '🔄 更新資料';
+    }
+  } catch(e) {
+    showToast('error', '❌ 連線錯誤：' + e.message);
+    btn.disabled = false; btn.textContent = '🔄 更新資料';
+  }
+}
+
+function startStatusPolling() {
+  if (statusInterval) clearInterval(statusInterval);
+  statusInterval = setInterval(checkStatus, 2000);
+  checkStatus();
+}
+
+async function checkStatus() {
+  try {
+    const status = await fetch('/api/status').then(r=>r.json());
+    updateStatusUI(status);
+
+    if (!status.running) {
+      clearInterval(statusInterval);
+      statusInterval = null;
+      document.getElementById('btnRefresh').disabled = false;
+      document.getElementById('btnRefresh').textContent = '🔄 更新資料';
+      if (status.last_status === 'success') {
+        showToast('success', '✅ 資料更新完成！正在重新載入...');
+        setTimeout(() => loadData(), 1500);
+      } else if (status.last_status === 'error') {
+        showToast('error', '❌ 更新失敗：' + status.message);
+      }
+    }
+  } catch(e) {}
+}
+
+function updateStatusUI(status) {
+  const dot = document.getElementById('sidebarDot');
+  const txt = document.getElementById('sidebarStatus');
+
+  if (status.running) {
+    dot.className = 'status-dot running';
+    txt.textContent = `更新中 ${status.progress}%`;
+    document.getElementById('progressWrap').classList.add('visible');
+    document.getElementById('progressMsg').textContent = status.message;
+    document.getElementById('progressPct').textContent = status.progress + '%';
+    document.getElementById('progressFill').style.width = status.progress + '%';
+  } else {
+    dot.className = 'status-dot';
+    txt.textContent = '系統就緒';
+    document.getElementById('progressWrap').classList.remove('visible');
+  }
+
+  if (status.next_run) {
+    const d = new Date(status.next_run);
+    document.getElementById('nextRunTime').textContent = d.toLocaleString('zh-TW');
+  }
+  if (status.last_run) {
+    const d = new Date(status.last_run);
+    document.getElementById('lastRunTime').textContent = d.toLocaleString('zh-TW');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// EXCEL DOWNLOAD
+// ═══════════════════════════════════════════════════════════
+function downloadExcel() {
+  window.location.href = '/api/download/excel';
+}
+
+// ═══════════════════════════════════════════════════════════
+// LOGS
+// ═══════════════════════════════════════════════════════════
+async function loadLogs() {
+  const logs = await fetch('/api/logs').then(r=>r.json());
+  const tbody = document.getElementById('logTableBody');
+  tbody.innerHTML = '';
+  if (!logs.length) {
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:var(--text-muted);padding:20px;">尚無紀錄</td></tr>';
+    return;
+  }
+  [...logs].reverse().forEach(log => {
+    const tr = document.createElement('tr');
+    const d = new Date(log.timestamp);
+    const status = log.status==='success'
+      ? '<span class="tag tag-dt">✅ 成功</span>'
+      : '<span class="tag" style="background:rgba(255,77,109,0.15);color:#ff4d6d;border:1px solid rgba(255,77,109,0.3);">❌ 失敗</span>';
+    tr.innerHTML = `
+      <td>${d.toLocaleString('zh-TW')}</td>
+      <td>${status}</td>
+      <td style="text-align:center;">${log.total_products||'—'}</td>
+      <td style="text-align:center;">${log.total_companies||'—'}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ═══════════════════════════════════════════════════════════
+// TOAST
+// ═══════════════════════════════════════════════════════════
+function showToast(type, msg) {
+  const container = document.getElementById('toastContainer');
+  const toast = document.createElement('div');
+  toast.className = `toast ${type}`;
+  toast.textContent = msg;
+  container.appendChild(toast);
+  setTimeout(() => {
+    toast.style.opacity = '0'; toast.style.transform = 'translateX(20px)';
+    toast.style.transition = 'all 0.3s';
+    setTimeout(() => toast.remove(), 300);
+  }, 5000);
+}
+
+// ═══════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadData();
+  // Check current status
+  const status = await fetch('/api/status').then(r=>r.json()).catch(()=>null);
+  if (status) {
+    updateStatusUI(status);
+    if (status.running) startStatusPolling();
+  }
+});
+</script>
+<!-- ══ MOBILE BOTTOM NAV ══════════════════════════════════ -->
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-btn active" id="mnav-dashboard" onclick="showTab('dashboard')">
+    📊<span>總覽</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav-companies" onclick="showTab('companies')">
+    🏢<span>公司</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav-products" onclick="showTab('products')">
+    📦<span>產品</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav-charts" onclick="showTab('charts')">
+    📈<span>圖表</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav-settings" onclick="showTab('settings')">
+    ⚙️<span>設定</span>
+  </button>
+</nav>
+</body>
+</html>

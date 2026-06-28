@@ -1,0 +1,3136 @@
+{
+  "last_updated": "2026-06-28T15:05:28.486817",
+  "total_products": 447,
+  "total_companies": 128,
+  "products": [
+    {
+      "company": "A solution Co., Ltd.",
+      "product_name": "LumiMatter",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Aqua",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Irrigation"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Aqua (v2)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Irrigation"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Door & Window",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Energy",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Energy - Dual Outlet (US & Canada)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Energy - Outdoor Outlet (Europe)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Flare",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Light Switch (US & Canada)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Light Switch Europe",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Motion",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve MotionBlinds",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Room",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Air"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Shutter Switch",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Shutter"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Thermo",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Thermo Control",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Water Guard",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Water"
+    },
+    {
+      "company": "ABB AG – Busch-Jaeger",
+      "product_name": "Eve Weather",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Weather"
+    },
+    {
+      "company": "AC lnfinity",
+      "product_name": "Smart Air Conditioner",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Air conditioning"
+    },
+    {
+      "company": "ALRE IT Regeltechnik GmbH",
+      "product_name": "KTRRUs410.B86",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "-"
+    },
+    {
+      "company": "Aeotec Group GmbH",
+      "product_name": "Aeotec Smart Home Hub",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Albrecht Jung GmbH & Co. KG",
+      "product_name": "Matter push-button 2-gang, battery-powered",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Allegion/Schlage Lock Company LLC",
+      "product_name": "Gainsborough Freestyle Smart WiFi Trilock",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Allegion/Schlage Lock Company LLC",
+      "product_name": "Schlage Encode Plus",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Allegion/Schlage Lock Company LLC",
+      "product_name": "Schlage Encode Plus Deadbolt",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Amlogic Co., Ltd",
+      "product_name": "Single chip of Wi-Fi 6 + Bluetooth 5.4 + IEEE 802.15.4 (W165x)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Amlogic Co., Ltd",
+      "product_name": "Single chip of Wi-Fi 6 + Bluetooth 5.4 + IEEE 802.15.4 (W265x)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Anker Innovations Technology Co., Ltd",
+      "product_name": "eufy Smart Lock C34",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Anker Innovations Technology Co., Ltd",
+      "product_name": "eufy Smart Lock E30",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Anker Innovations Technology Co., Ltd",
+      "product_name": "eufy Smart Lock E31",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Arcadyan Technology Corporation",
+      "product_name": "Boost Wi-Fi 7",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Arcadyan Technology Corporation",
+      "product_name": "PRV33AX346B-H2-OG",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Arcadyan Technology Corporation",
+      "product_name": "TMO-G5AR",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Gateway"
+    },
+    {
+      "company": "Arduino S.r.l.",
+      "product_name": "Arduino Nano Matter",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Arduino S.r.l.",
+      "product_name": "Arduino Nesso N1",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Arpobot Pty Ltd",
+      "product_name": "Smart Shade",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Askey Computer Corp.",
+      "product_name": "WiFi 7 Router",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Assa Abloy",
+      "product_name": "Yale Matter Smart Module",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Athom B.V.",
+      "product_name": "Homey Pro (Early 2023)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Atouch Winwel Lda",
+      "product_name": "KNX-K4IOT",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "BOKE Drivers Co., Ltd",
+      "product_name": "BOKE WTL042S WSL042S Series",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Beken Corporation",
+      "product_name": "BK72x9",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Bold Security Technology B.V.",
+      "product_name": "Bold Smart Cylinder",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Bouffalo Lab (Nanjing) Co., Ltd.",
+      "product_name": "BL61x",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Bouffalo Lab (Nanjing) Co., Ltd.",
+      "product_name": "BL70x",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Bouffalo Lab (Nanjing) Co., Ltd.",
+      "product_name": "Smart Night Light-T",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Bouygues Telecom",
+      "product_name": "BboxTV4A",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Media streamer"
+    },
+    {
+      "company": "CAME S.p.A.",
+      "product_name": "QBETWTR1",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Gateway"
+    },
+    {
+      "company": "CAME S.p.A.",
+      "product_name": "TH/ONE BATTERY",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "Cascoda Limited",
+      "product_name": "CA8211",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Cascoda Limited",
+      "product_name": "Chili2D",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Cascoda Limited",
+      "product_name": "KNX-IoT Environment Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "-"
+    },
+    {
+      "company": "Cascoda Limited",
+      "product_name": "KNX-IoT Mesh Extender",
+      "product_type": "Built on Thread",
+      "device_type": "Infrastructure",
+      "sub_category": "-"
+    },
+    {
+      "company": "Champon",
+      "product_name": "Onvis Contact Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Champon",
+      "product_name": "Onvis Outlet T20",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "Champon",
+      "product_name": "Onvis Security Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Champon",
+      "product_name": "Onvis Smart Motion Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Champon",
+      "product_name": "Onvis Switch",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Changsha Xizhen Electronics Technology Co., Ltd.",
+      "product_name": "5-in-1 Presence Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Changzhou Yooksmart Innovation Co.,Ltd",
+      "product_name": "Smart WindowCovering Series",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Chengdu Meross Technology Co., Ltd",
+      "product_name": "Smart Presence Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "D-Link Corporation",
+      "product_name": "AX3000 Wi-Fi 6 IoT Gateway",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Gateway"
+    },
+    {
+      "company": "DELTA DORE SA",
+      "product_name": "Smart Roller Blind",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "DELTA DORE SA",
+      "product_name": "Smart universal beltwinder",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Shutter"
+    },
+    {
+      "company": "Dendo Systems Pty Ltd",
+      "product_name": "Dendo SCM Shade",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "Door Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "SA75591A1 Kasten Light Switch",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "SA7560 DUC Wire",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Lighting"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "SA7561 DUC Cozy",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Air conditioning"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "SA75631A2 DUC Curtain",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Curtain"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "SA75631A3 DUC Blinds",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "SA75631A3 DUC Shutter",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Shutter"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "SIGMACASA Smart Switch",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "Smart Plug 3PIN TW",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "Dexatek Technology Ltd.,",
+      "product_name": "TARUIE AC Remote",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Air conditioning"
+    },
+    {
+      "company": "Dreame Trading (Tianjin) Co.,Ltd.",
+      "product_name": "Dreame NAVO Smart Lock A10",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Dreame Trading (Tianjin) Co.,Ltd.",
+      "product_name": "Dreame NAVO Smart Lock E10",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Dreame Trading (Tianjin) Co.,Ltd.",
+      "product_name": "Riponex Smart Lock X10 Ultra",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "EGLO LEUCHTEN",
+      "product_name": "Controllable Color Light",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Earda Technologies Co., Ltd",
+      "product_name": "Eardatek Thread Module EWN-32MG24N1AA",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Earda Technologies Co., Ltd",
+      "product_name": "Eardatek Thread Module EWN-8777GKF1AA",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Enlight International Ltd.",
+      "product_name": "Smart Ceiling Light",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "ESP32-C5",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "ESP32-C6",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "ESP32-H2",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "Espressif Thread Border Router",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "M5Stack Thread Border Router",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "Thread 4-Channel Switch On/Off",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "Thread LED Driver Color",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "Thread Plug",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "Thread Thermostat",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "Thread window covering",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "-"
+    },
+    {
+      "company": "Fortune Brands Innovations, Inc.",
+      "product_name": "Yale Smart Lock with Matter",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "GL Technologies (Hong Kong) Limited",
+      "product_name": "All-in-One Wireless Human Presence Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "GL Technologies (Hong Kong) Limited",
+      "product_name": "GL-S200",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "-"
+    },
+    {
+      "company": "GL Technologies (Hong Kong) Limited",
+      "product_name": "Wireless Human Presence Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Google",
+      "product_name": "Google TV Streamer",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Media streamer"
+    },
+    {
+      "company": "Google",
+      "product_name": "Nest Hub (2nd Gen)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Smart display"
+    },
+    {
+      "company": "Google",
+      "product_name": "Nest Hub Max Fuchsia",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Smart display"
+    },
+    {
+      "company": "Google",
+      "product_name": "Nest Wi-Fi Point",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Google",
+      "product_name": "Nest Wi-Fi Pro",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Google",
+      "product_name": "Nest Wi-Fi Router",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Google",
+      "product_name": "Pixel 10 Pro",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "Google",
+      "product_name": "Pixel 10 Pro Fold",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "Google",
+      "product_name": "Pixel 10 Pro XL",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
+      "product_name": "Curtain motor",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Curtain"
+    },
+    {
+      "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
+      "product_name": "Pergola Controller (AC296)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "-"
+    },
+    {
+      "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
+      "product_name": "Pergola Controller (AC297)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "-"
+    },
+    {
+      "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
+      "product_name": "Roller Shades DC Motor",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Curtain"
+    },
+    {
+      "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
+      "product_name": "Roller Shades Motor",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "-"
+    },
+    {
+      "company": "HUZHOU DOORMA INTEL TECH CO LTD",
+      "product_name": "25mm tubular Motor",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Curtain"
+    },
+    {
+      "company": "Hager group",
+      "product_name": "Berker Application Module",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Hager group",
+      "product_name": "Berker Application module PIR",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Hager group",
+      "product_name": "Berker Surface mounted push button",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Hager group",
+      "product_name": "Rotary dimmer, connectable",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Hinkley Lighting Inc.",
+      "product_name": "Thread Fan Light controller",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Lighting"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HAT31",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HCS52",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "Hoo Max",
+      "product_type": "Built on Thread",
+      "device_type": "Infrastructure",
+      "sub_category": "Gateway"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Contact Sensor 02",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Energy Metering Plug (1-socket)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Energy Metering Plug (2-socket)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Energy Metering Plug (3-socket)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Energy Metering Plug (4-socket)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Energy Metering Plug (5-socket)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Candle lamp)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Ceiling light)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Filament lamp)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (LED strip)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Lightstrip"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Magnetic light fixture)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Panel light)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Pendant light)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Recessed light)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Spherical bulb)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "HooRii Technology Co., Ltd",
+      "product_name": "HooRii Light (Spotlight)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "ALPSTUGA air quality monitor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Air"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "BILRESA dual button",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "BILRESA scroll wheel",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "DUBBELKISEL",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "GRILLPLATS plug",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KAJPLATS E12 CWS globe 800lm",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KAJPLATS E14 CWS globe 806lm",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KAJPLATS E26 CWS globe 1100lm",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KAJPLATS E27 CWS globe 1055lm",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KAJPLATS GU10 CWS 575lm",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KAJPLATS GU10 CWS 575lm",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KAJPLATS WS",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb, Light"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KAJPLATS WS",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb, Light"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "KLIPPBOK water leak sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Water"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "MYGGBETT door/window sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "MYGGSPRAY wrlss mtn sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "TIMMERFLOTTE temp/hmd sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "TOFSMYGGA plug",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "TOFSMYGGA plug outdoor",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "VARMBLIXT table/wall lamp",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "ITIUS GmbH",
+      "product_name": "ITIUS E27 RGB+CCT",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "ITIUS GmbH",
+      "product_name": "ITIUS Lights (GU10)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Infineon Technologies Americas Corp.",
+      "product_name": "CYW30739",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Infineon Technologies Americas Corp.",
+      "product_name": "CYW30739B2-P5x",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Inovelli Labs Corporation",
+      "product_name": "White Series Smart 2-1 Switch",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Inovelli Labs Corporation",
+      "product_name": "White Series Smart Fan Switch",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Inovelli Labs Corporation",
+      "product_name": "White Series Smart Fan/Light Canopy Module",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Air"
+    },
+    {
+      "company": "Inovelli Labs Corporation",
+      "product_name": "White Series Smart On/Off Switch",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Insta GmbH",
+      "product_name": "Insta Push Button Module",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Inventronics GmbH",
+      "product_name": "D+ D4i BR LI",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Inventronics GmbH",
+      "product_name": "D+ D4i BR LS/PD LI O",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Inventronics GmbH",
+      "product_name": "OT Wi 35/220 - 240/400 D NFC DALI+ L",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Lighting"
+    },
+    {
+      "company": "KASTA Technologies (AU) Pty LTD",
+      "product_name": "Kasta Matter Dimmer",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "KASTA Technologies (AU) Pty LTD",
+      "product_name": "Kasta Matter Relay",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "KASTA Technologies (AU) Pty LTD",
+      "product_name": "Kasta Matter Remote",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "LEEDARSON IoT Technology Inc",
+      "product_name": "A19 Smart RGB LED Bulb",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "LEEDARSON IoT Technology Inc",
+      "product_name": "Smart Plug",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Air Quality Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Air"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Door and Window Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Motion Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG SIGNATURE Smart InstaView® Over-the-Range Microwave Oven",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "-"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Smart Button (1 Button)",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Smart Button (2 Button)",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Smart Plug",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Smart Wall Switch (1 Button)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Smart Wall Switch (2 Button)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Smart Wall Switch (3 Button)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Temperature and Humidity Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG ThinQ ON",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Smart speaker"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG webOS TV",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "LOCKIN (U.S.) INC.",
+      "product_name": "Veno Pro",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "Echo (E78T24)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "Echo (MA49CA)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "Echo (MD6NE4)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "Echo (P8Z7MN)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "Echo (PE4Z26)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "Echo gen 4",
+      "product_type": "Built on Thread",
+      "device_type": "Infrastructure",
+      "sub_category": "Smart speaker"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero 6",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero 6+",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero Beacon",
+      "product_type": "Built on Thread",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero Max 7",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero PoE 6",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero PoE Gateway",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero Pro (Wi-Fi 5)",
+      "product_type": "Built on Thread",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero Pro (Wi-Fi 6)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Lab126",
+      "product_name": "eero Pro 6E",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Legrand",
+      "product_name": "Netatmo Smart Security Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Level Home Inc.",
+      "product_name": "Level Lock+ (Matter)",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Aqara Door and Window Sensor P2",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Aqara Hub M3",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Aqara Motion and Light Sensor P2",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Aqara Smart Lock J200 / J200 Set",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Aqara Thread Module LM22-G24-HP",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Aqara Thread Module LM22-G24-LP",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Camera Hub G350",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Camera Hub G5 Pro (PoE)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Camera Hub G5 Pro (Wi-Fi)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Climate Sensor W100",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Constant Current Driver T3 (40W)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Constant Current Driver T3 (75W)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "DIN Rail Hub AX100M",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Dimmer Switch H2 EU",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Dimmer Switch H2 US",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Doorbell Camera Hub G410",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Edge Hub GX300M",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Edge Hub M300",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Floor Heating Thermostat W500",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Hub AX200M",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "MEAN WELL ENTERPRISES CO., LTD.",
+      "product_name": "LED Driver",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "MIWA LOCK Co., LTD.",
+      "product_name": "DTPGM",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "MMB Networks",
+      "product_name": "Thread Mesh Extender",
+      "product_type": "Built on Thread",
+      "device_type": "Infrastructure",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Mayer & Co Beschläge GmbH",
+      "product_name": "Sense by MACO | Casement",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Mayer & Co Beschläge GmbH",
+      "product_name": "Sense by MACO | Door",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Mayer & Co Beschläge GmbH",
+      "product_name": "Sense by MACO | Universal",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Mayer & Co Beschläge GmbH",
+      "product_name": "Sense by MACO | Window Pro T&T",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Mayer & Co Beschläge GmbH",
+      "product_name": "Sense by MACO | Window T&T",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Mediatek Inc",
+      "product_name": "Airoha AB16xx",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Mediatek Inc",
+      "product_name": "MT7902",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Mediatek Inc",
+      "product_name": "MT7903 Border Router Assembly",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Mediola connected living AG",
+      "product_name": "SH 2.0 Matter over Thread Module",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Microchip Technology Inc",
+      "product_name": "PIC32CX-BZ2 and WBZ451",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Microchip Technology Inc",
+      "product_name": "WBZ451HPE",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Mighton Products Ltd",
+      "product_name": "Avia USA Deadbolt",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Mikrotikls SIA",
+      "product_name": "Indoor Air Quality Monitor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Air"
+    },
+    {
+      "company": "NAMI AI",
+      "product_name": "Mesh Sensor",
+      "product_type": "Thread Certified Component",
+      "device_type": "Infrastructure",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "K32W061 / K32W041",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "K32W148",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP MCX W71",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP MCX W72",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP RW612 Wireless MCU with Integrated Tri-Radio",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP RW612 Wireless MCU with Integrated Tri-Radio OTBR",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP RW612 Wireless MCU with Integrated Tri-Radio OTBR",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP i.MX MPU with IW610 Tri-Radio OTBR",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP i.MX MPU with IW612 Tri-Radio OTBR",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP i.MX RT Crossover MCU + K32W061/41",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP i.MX8M RT Crossover MCU + IW612 Tri-Radio",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "i.MX8M MPU + IW612 Tri-Radio",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "i.MX8M MPU + IW612 Tri-Radio (BR)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Caveman A19/A60 Light Bulb",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Caveman Smart 6\" Downlight",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Essentials A19 Bulb",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Essentials Lightstrip",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Lightstrip"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Nanoleaf Essentials A19/A60 Smart Bulb",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Nanoleaf Essentials BR30 Smart Bulb",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Nanoleaf Essentials GU10 Smart Bulb",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Nanoleaf Essentials Lightstrip",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Lightstrip"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Nanoleaf Essentials Smart Ceiling Light",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Nanoleaf Essentials Smart Recessed Downlight",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Umbra Cono Lamp",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Nanoleaf",
+      "product_name": "Umbra Cup Lamp",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Ningbo Dooya Mechanic & Electronic Technology Co., Ltd",
+      "product_name": "Thread Window Covering Motor",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "product_name": "Nordic Semiconductor nRF54Lxx – nRF Connect SDK",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "product_name": "nRF52833 nRF Connect SDK",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "product_name": "nRF52840 nRF Connect SDK",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Nordic Semiconductor ASA",
+      "product_name": "nRF5340 nRF Connect SDK",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Nuki Home Solutions GmbH",
+      "product_name": "Nuki Smart Lock (4th Generation)",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Nuki Home Solutions GmbH",
+      "product_name": "Nuki Smart Lock Go",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Nuki Home Solutions GmbH",
+      "product_name": "Nuki Smart Lock Pro",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Nuki Home Solutions GmbH",
+      "product_name": "Nuki Smart Lock Pro (4th Generation)",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Nuki Home Solutions GmbH",
+      "product_name": "Nuki Smart Lock Ultra",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "ORANGE",
+      "product_name": "Livebox S",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "PIN Genie Inc, DBA Lockly",
+      "product_name": "Lockly Smart Lock (PGD638)",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "PIN Genie Inc, DBA Lockly",
+      "product_name": "Lockly Smart Lock (PGD738)",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Smart Switch",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Pro Smart Home Hub",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Pro Torkey Smart RGBCW LED bulb",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight RGBlC Smart LED Neon Rope Light",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Lightstrip"
+    },
+    {
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Smart Ceiling Fan-Light S1",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Smart LED Bedside Lamp D1",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Smart LED Desk Lamp D1",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Qorvo Utrecht B.V.",
+      "product_name": "GP712",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Qorvo Utrecht B.V.",
+      "product_name": "QPG6105",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Qorvo Utrecht B.V.",
+      "product_name": "QPG6200",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Qorvo Utrecht B.V.",
+      "product_name": "QPG7015M",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Qualcomm Inc.",
+      "product_name": "QCA 4020",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Quectel Wireless Solutions Co., Ltd.",
+      "product_name": "KGM133S",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Rafael Microelectronics, Inc.",
+      "product_name": "2.4G Wireless SOC E2",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Rafael Microelectronics, Inc.",
+      "product_name": "RT582 + OpenThread SDK (V1.3.0)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Rafael Microelectronics, Inc.",
+      "product_name": "RT583",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Rafael Microelectronics, Inc.",
+      "product_name": "Rafael RT584x",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Rafael Microelectronics, Inc.",
+      "product_name": "Smart Wall Switch",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Realtek",
+      "product_name": "OT Border Router with Realtek AmebaSmart and RTL877x RCP",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Realtek",
+      "product_name": "RTL877x series SoC",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Realtek",
+      "product_name": "Realtek Wi-Fi+BT+802.15.4 3-in-1 NIC Combo SoC",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Robert Bosch GmbH",
+      "product_name": "Door-/Window Contact II [+M]",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Robert Bosch GmbH",
+      "product_name": "Motion Detector II [+M]",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Robert Bosch GmbH",
+      "product_name": "Plug Compact [+M]",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "Robert Bosch GmbH",
+      "product_name": "Radiator Thermostat II [+M]",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "SENSEREO LIMITED",
+      "product_name": "Sensereo Matter Smoke Alarm",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Smoke alarm"
+    },
+    {
+      "company": "SHENZHEN DEASINO TECHNOLOGY CO.,LTD",
+      "product_name": "Matter LOCK",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "SHENZHEN DEASINO TECHNOLOGY CO.,LTD",
+      "product_name": "Matter module",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "SIEGENIA-AUBI KG",
+      "product_name": "Smart Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "SIEGENIA-AUBI KG",
+      "product_name": "Smart Window Handle",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Window lock"
+    },
+    {
+      "company": "STMicroelectronics International N.V.",
+      "product_name": "STM32WB",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "STMicroelectronics International N.V.",
+      "product_name": "STM32WB (Nucleo)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "STMicroelectronics International N.V.",
+      "product_name": "STM32WBA",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "STMicroelectronics International N.V.",
+      "product_name": "STM32WBA65I-DK1 Discovery kit",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Harman Kardon Virtuo",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Smart speaker"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "R95H",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "S95H",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung Monitor",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung Signage",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung Smart TV",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung SmartThings Hub V3",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung SmartThings Station",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung Soundbar",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "SmartThings Hub V3",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Savant",
+      "product_name": "Smart window covering",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Curtain"
+    },
+    {
+      "company": "Schüco Polymer Technologies KG",
+      "product_name": "Schüco Funksensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Secuyou",
+      "product_name": "Secuyou Smart Lock",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Sercomm Corporation",
+      "product_name": "SAX2V1R",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Sercomm Corporation",
+      "product_name": "SBE1V1R",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Wi-Fi Access Point"
+    },
+    {
+      "company": "Shenzhen BOFU smart.co.,ltd",
+      "product_name": "Blinds motor",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Shenzhen Conex Intelligent Technology Co.,Ltd",
+      "product_name": "Philips Smart Lock",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Shenzhen Haojai Lianchuang Technology Co.,Ltd",
+      "product_name": "HAOJAI Smart Switch",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Shenzhen Haojai Lianchuang Technology Co.,Ltd",
+      "product_name": "Smart Curtain",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Shenzhen Heiman Technology Co., Ltd.",
+      "product_name": "Smart Carbon Monoxide Alarm",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Gas alarm"
+    },
+    {
+      "company": "Shenzhen Heiman Technology Co., Ltd.",
+      "product_name": "Smart Humidity & Temperature Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Shenzhen Heiman Technology Co., Ltd.",
+      "product_name": "Smart Plug (HS2SK series)",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Smart plug"
+    },
+    {
+      "company": "Shenzhen Heiman Technology Co., Ltd.",
+      "product_name": "Smart Smoke Alarm",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Smoke alarm"
+    },
+    {
+      "company": "Shenzhen Heiman Technology Co., Ltd.",
+      "product_name": "Smart Water Leakage Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Water"
+    },
+    {
+      "company": "Shenzhen Sunricher Technology Co.,Ltd.",
+      "product_name": "Sensor & Switch",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Shenzhen Sunricher Technology Co.,Ltd.",
+      "product_name": "Smart LED Dimmer Controller",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Sichuan Changhong Neonet Technologies Co.,Ltd.",
+      "product_name": "Door Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Sichuan Changhong Neonet Technologies Co.,Ltd.",
+      "product_name": "Water Leak Detector",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Water"
+    },
+    {
+      "company": "Siemens",
+      "product_name": "Thread Border Router",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "Siemens",
+      "product_name": "Wireless Room Sensor QAA2150KT",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Siemens",
+      "product_name": "Wireless Room Sensor QAA2890/WI",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Siemens",
+      "product_name": "Wireless Room Sensor QFA2250KT",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Siemens",
+      "product_name": "Wireless Room Sensor QFA2890/WI",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Siemens",
+      "product_name": "Wireless Room Sensor QPA2350KT",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Siemens",
+      "product_name": "Wireless Room Sensor QPA2892/WI",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Signify Netherlands B.V.",
+      "product_name": "Philips Hue Light",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Silicon Laboratories, Inc.",
+      "product_name": "MGM12P",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Silicon Laboratories, Inc.",
+      "product_name": "Silicon Labs Mighty Gecko (EFR32MG12x)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Silicon Laboratories, Inc.",
+      "product_name": "Silicon Labs Mighty Gecko (EFR32MG13x)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Silicon Laboratories, Inc.",
+      "product_name": "Silicon Labs Mighty Gecko (EFR32MG21x)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Silicon Laboratories, Inc.",
+      "product_name": "Silicon Labs Mighty Gecko (EFR32MG24x)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Silicon Laboratories, Inc.",
+      "product_name": "Silicon Labs Mighty Gecko (EFR32MG26x)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Silicon Laboratories, Inc.",
+      "product_name": "Silicon Labs Mighty Gecko (SiMG301)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Siterwell Electronics Co., Limited",
+      "product_name": "Smoke CO Alarm",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Smoke alarm"
+    },
+    {
+      "company": "Skylux NV",
+      "product_name": "Screen",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "Skylux NV",
+      "product_name": "iWindow",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "Sleekpoint Innovations Company Limited",
+      "product_name": "Airversa Purelle Smart Air Purifier",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Air"
+    },
+    {
+      "company": "Sleekpoint Innovations Company Limited",
+      "product_name": "Button Controller",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Sleekpoint Innovations Company Limited",
+      "product_name": "Smart Lock",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "SmartWings Home LLC",
+      "product_name": "SmartWings window covering",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "TETNET OÜ",
+      "product_name": "Tarken WM",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Window lock"
+    },
+    {
+      "company": "Tedee Sp. z o.o.",
+      "product_name": "Tedee GO",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Telink Semiconductor (Shanghai) Co., Ltd.",
+      "product_name": "TL323X Series SoC",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Telink Semiconductor (Shanghai) Co., Ltd.",
+      "product_name": "TLSR9",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Telink Semiconductor (Shanghai) Co., Ltd.",
+      "product_name": "TLSR9 - Border Router",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Telink Semiconductor (Shanghai) Co., Ltd.",
+      "product_name": "TLSR922X Series SoC",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Texas Instruments Inc.",
+      "product_name": "CC2674x_1354x",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Texas Instruments Inc.",
+      "product_name": "CC26x2",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "Texas Instruments Inc.",
+      "product_name": "EOL - CC1352R/P",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "ThirdReality, Inc.",
+      "product_name": "Smart Night Light-T",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "ThirdReality, Inc.",
+      "product_name": "Smart Switch MT1",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "Door Window Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "Motion Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "Smart Door Lock",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "Smart Window Covering",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "-"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "TS24-LC5",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "TS24-U",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "TS24-U-IPEX",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "Thread Bulb",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Bulb"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "Thread Color Temperature Light Drive",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "Thread Dimmable Light Drive",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Vitrumshade LLC",
+      "product_name": "Smart Internal Blinds",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "WAREMA Renkhoff SE",
+      "product_name": "Xeenos Go Aktor Jalousie Plug",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "WAREMA Renkhoff SE",
+      "product_name": "Xeenos Go Aktor Jalousie UP",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "WAREMA Renkhoff SE",
+      "product_name": "Xeenos Go Aktor Rollladen Plug",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "WAREMA Renkhoff SE",
+      "product_name": "Xeenos Go Aktor Rollladen UP",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Shutter"
+    },
+    {
+      "company": "WAREMA Renkhoff SE",
+      "product_name": "Xeenos Go Aktor Switch 2K UP",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "WINTECKOREA INC",
+      "product_name": "GATEWAY-MT",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "WNC Corporation",
+      "product_name": "Indoor Air Quality Monitor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Air"
+    },
+    {
+      "company": "Watts Water Technologies",
+      "product_name": "Tekmar Smart Steam Control 289",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "Watts Water Technologies",
+      "product_name": "tekmar Smart Boiler Control 294",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "Watts Water Technologies",
+      "product_name": "tekmar Wireless Mesh Indoor Sensor 042",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "Watts Water Technologies",
+      "product_name": "tekmar Wireless Mesh Outdoor Sensor 043",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Air Quality Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Air"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Light Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Light"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Radar Presence Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Smoke Sensor",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Smoke alarm"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Temperature and Humidity Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Vibration Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Window and Door Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Contact"
+    },
+    {
+      "company": "WideSky.cloud Pty. Ltd",
+      "product_name": "WideSky Hub",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Hub"
+    },
+    {
+      "company": "Xiaomi Communications Co., Ltd.",
+      "product_name": "Xiaomi Self-Install Smart Lock (Keypad Included)",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Xthings Industry",
+      "product_name": "ULTRALOQ Bolt Fingerprint and NFC Smart Matter Deadbolt",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Xthings Industry",
+      "product_name": "ULTRALOQ Bolt NFC Smart Matter Deadbolt",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Xthings Industry",
+      "product_name": "ULTRALOQ Latch5 Fingerprint Smart Matter Lever",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Xthings Industry",
+      "product_name": "ULTRALOQ U-Bolt Pro Smart Matter Deadbolt",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Xthings Industry",
+      "product_name": "ULTRALOQ U-bolt Smart Matter Deadbolt",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Xthings Industry",
+      "product_name": "Ultraloq Bolt Fingerprint Smart Matter Deadbolt",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock"
+    },
+    {
+      "company": "Zemismart Technology Limited",
+      "product_name": "Zemismart Lighting Kit",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Lightstrip"
+    },
+    {
+      "company": "Zemismart Technology Limited",
+      "product_name": "Zemismart MT01 Slide Curtain",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Curtain"
+    },
+    {
+      "company": "Zemismart Technology Limited",
+      "product_name": "Zemismart Motion Detector",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Presence"
+    },
+    {
+      "company": "Zemismart Technology Limited",
+      "product_name": "Zemismart Thread Curtain Motor",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Curtain"
+    },
+    {
+      "company": "Zemismart Technology Limited",
+      "product_name": "Zemismart Window Shading System Driver",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Curtain"
+    },
+    {
+      "company": "Zhejiang General light Curtain Co., Ltd.",
+      "product_name": "25 DC roller shutter motor",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Zhejiang Jiecang Linear Motion Technology Co.,Ltd",
+      "product_name": "Matter 1.3 Window covering",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind"
+    },
+    {
+      "company": "Zhejiang Moorgen Group Co., Ltd.",
+      "product_name": "Crystal Series Rechargeable Lamp",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light"
+    },
+    {
+      "company": "Zhuhai Ltech Technology Co., Ltd",
+      "product_name": "Ltech Constant Current LED Driver (LA series)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zhuhai Ltech Technology Co., Ltd",
+      "product_name": "Ltech Constant Current LED Driver (SE series)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zhuhai Ltech Technology Co., Ltd",
+      "product_name": "Ltech Constant Voltage LED Driver (LM, LA, HMA series)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zhuhai Ltech Technology Co., Ltd",
+      "product_name": "Ltech Constant Voltage LED Driver (MA series)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zhuhai Ltech Technology Co., Ltd",
+      "product_name": "Ltech Light Converter (E6, CG, KM families)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Zhuhai Ltech Technology Co., Ltd",
+      "product_name": "Ltech On/Off Light Driver",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "Zumtobel Group AG",
+      "product_name": "Driver LC 100W 24V MTR SC PRE2",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zumtobel Group AG",
+      "product_name": "Driver LC 150W 24V MTR SC PRE2",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zumtobel Group AG",
+      "product_name": "Driver LC 35W 24V MTR SC PRE2",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zumtobel Group AG",
+      "product_name": "Driver LC 60W 24V MTR SC PRE2",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zumtobel Group AG",
+      "product_name": "Wireless Module MTR",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zumtobel Group AG",
+      "product_name": "Wireless Module SR MTR",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-"
+    },
+    {
+      "company": "Zumtobel Group AG",
+      "product_name": "Wireless module passive MTR",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch"
+    },
+    {
+      "company": "geo",
+      "product_name": "geo SeeZero Display",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "-"
+    },
+    {
+      "company": "geo",
+      "product_name": "geo SeeZero Heating Controller",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "-"
+    },
+    {
+      "company": "synaptics",
+      "product_name": "SYN4384 (as Thread RCP) + [Synaptics Linux host base on Raspberry Pi 4] Border Router",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-"
+    },
+    {
+      "company": "synaptics",
+      "product_name": "Synaptics V1.3 Border Router Assembly - SYN20708 (as Thread RCP) + Linux Host",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "synaptics",
+      "product_name": "Synaptics V1.4 Border Router Assembly - SYN20708 (as Thread RCP) + Raspberry Pi Linux host",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-"
+    },
+    {
+      "company": "tado",
+      "product_name": "Heat Pump Optimizer",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "tado",
+      "product_name": "Internet Bridge X",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "-"
+    },
+    {
+      "company": "tado",
+      "product_name": "Smart Radiator Thermostat X",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "tado",
+      "product_name": "Smart Radiator Thermostat X",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "tado",
+      "product_name": "Smart Thermostat X",
+      "product_type": "Built on Thread",
+      "device_type": "-",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "tado",
+      "product_name": "Smart Thermostat X Gen 2",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "tado",
+      "product_name": "Wireless Receiver X",
+      "product_type": "Thread Certified Component",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "tado",
+      "product_name": "Wireless Receiver X - Programmer with Hot Water Control and OpenTherm",
+      "product_type": "Thread Certified Component",
+      "device_type": "HVAC",
+      "sub_category": "Heating"
+    },
+    {
+      "company": "tado",
+      "product_name": "Wireless Temperature Sensor X",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    },
+    {
+      "company": "tado",
+      "product_name": "Wireless Temperature Sensor X Gen 2",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature"
+    }
+  ]
+}

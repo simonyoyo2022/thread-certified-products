@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: thread-certified-products
+    runtime: python
+    region: singapore        # 亞洲區，台灣訪問速度快
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m playwright install chromium --with-deps
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    healthCheckPath: /api/status
+    envVars:
+      - key: IS_CLOUD
+        value: "true"
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: FLASK_ENV
+        value: "production"

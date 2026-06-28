@@ -1,0 +1,59 @@
+name: Monthly Auto-Update Thread Data
+
+on:
+  # 每月 28 日 15:00 UTC (= 台灣 23:00) 自動執行
+  schedule:
+    - cron: '0 15 28 * *'
+  # 也可手動觸發
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: '手動觸發原因'
+        required: false
+        default: '手動更新資料'
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: |
+          python -m playwright install chromium --with-deps
+
+      - name: Run DT/SC scraper
+        run: |
+          python fix_dt_sc_playwright.py
+        env:
+          PYTHONUNBUFFERED: '1'
+
+      - name: Generate Excel report
+        run: |
+          python generate_excel_all.py
+
+      - name: Commit updated data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add data/products.json Thread_Certified_Products_All.xlsx
+          git diff --staged --quiet || git commit -m "🤖 Auto-update Thread data: $(date '+%Y-%m-%d %H:%M UTC')"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2026-06-28T11:30:10.795343",
+    "total_products": 0,
+    "total_companies": 0,
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-06-28T12:29:07.526922",
+    "total_products": 447,
+    "total_companies": 128,
+    "status": "success"
+  }
+]
