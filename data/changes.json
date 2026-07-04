@@ -1,21 +1,329 @@
 {
-  "generated_at": "2026-07-04T14:29:28.456291",
-  "previous_date": null,
-  "is_first_run": true,
-  "new_companies": [],
+  "generated_at": "2026-07-04T08:28:33.020303",
+  "previous_date": "2026-06-28T15:05:28.486817",
+  "is_first_run": false,
+  "new_companies": [
+    "Grimsholm Products AB"
+  ],
   "removed_companies": [],
-  "new_products": [],
+  "new_products": [
+    {
+      "company": "Grimsholm Products AB",
+      "product_name": "Smart Irrigation Valve",
+      "device_type": "Automation control",
+      "sub_category": "Irrigation",
+      "product_type": "Built on Thread"
+    }
+  ],
   "removed_products": [],
-  "changed_products": [],
+  "changed_products": [
+    {
+      "company": "LEEDARSON IoT Technology Inc",
+      "product_name": "Smart Plug",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "Automation control",
+          "new": "-"
+        }
+      ]
+    },
+    {
+      "company": "ORANGE",
+      "product_name": "Livebox S",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Pro Smart Home Hub",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Harman Kardon Virtuo",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung Monitor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung Signage",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung Smart TV",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung SmartThings Station",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "Samsung Soundbar",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Samsung SmartThings",
+      "product_name": "SmartThings Hub V3",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Sercomm Corporation",
+      "product_name": "SAX2V1R",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Sercomm Corporation",
+      "product_name": "SBE1V1R",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Siemens",
+      "product_name": "Thread Border Router",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Tuya Global Inc",
+      "product_name": "Motion Sensor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "Watts Water Technologies",
+      "product_name": "tekmar Wireless Mesh Indoor Sensor 042",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "Watts Water Technologies",
+      "product_name": "tekmar Wireless Mesh Outdoor Sensor 043",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Air Quality Sensor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Light Sensor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Radar Presence Sensor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Smoke Sensor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Temperature and Humidity Sensor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Vibration Sensor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "Window and Door Sensor",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "WideSky.cloud Pty. Ltd",
+      "product_name": "WideSky Hub",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "Zemismart Technology Limited",
+      "product_name": "Zemismart Motion Detector",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Sensor"
+        }
+      ]
+    },
+    {
+      "company": "tado",
+      "product_name": "Heat Pump Optimizer",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "company": "tado",
+      "product_name": "Internet Bridge X",
+      "changes": [
+        {
+          "field": "device_type",
+          "old": "-",
+          "new": "Infrastructure"
+        }
+      ]
+    }
+  ],
   "stats": {
-    "total_products_new": 440,
-    "total_products_old": 0,
-    "total_companies_new": 128,
-    "total_companies_old": 0,
-    "new_products_count": 0,
+    "total_products_new": 441,
+    "total_products_old": 440,
+    "total_companies_new": 129,
+    "total_companies_old": 128,
+    "new_products_count": 1,
     "removed_products_count": 0,
-    "new_companies_count": 0,
+    "new_companies_count": 1,
     "removed_companies_count": 0,
-    "changed_products_count": 0
+    "changed_products_count": 27
   }
 }

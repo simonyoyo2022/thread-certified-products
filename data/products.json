@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-28T15:05:28.486817",
-  "total_products": 447,
-  "total_companies": 128,
+  "last_updated": "2026-07-04T08:28:32.932823",
+  "total_products": 448,
+  "total_companies": 129,
   "products": [
     {
       "company": "A solution Co., Ltd.",
@@ -949,6 +949,15 @@
       "company_is_new": false
     },
     {
+      "company": "Grimsholm Products AB",
+      "product_name": "Smart Irrigation Valve",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Irrigation",
+      "is_new": true,
+      "company_is_new": true
+    },
+    {
       "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
       "product_name": "Curtain motor",
       "product_type": "Built on Thread",
@@ -1555,7 +1564,7 @@
       "company": "LEEDARSON IoT Technology Inc",
       "product_name": "Smart Plug",
       "product_type": "Built on Thread",
-      "device_type": "Automation control",
+      "device_type": "-",
       "sub_category": "Smart plug",
       "is_new": false,
       "company_is_new": false
@@ -2491,7 +2500,7 @@
       "company": "ORANGE",
       "product_name": "Livebox S",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Wi-Fi Access Point",
       "is_new": false,
       "company_is_new": false
@@ -2527,7 +2536,7 @@
       "company": "Qingdao Yeelink Information Technology Co., Ltd",
       "product_name": "Yeelight Pro Smart Home Hub",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Hub",
       "is_new": false,
       "company_is_new": false
@@ -2824,7 +2833,7 @@
       "company": "Samsung SmartThings",
       "product_name": "Harman Kardon Virtuo",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Smart speaker",
       "is_new": false,
       "company_is_new": false
@@ -2851,7 +2860,7 @@
       "company": "Samsung SmartThings",
       "product_name": "Samsung Monitor",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Hub",
       "is_new": false,
       "company_is_new": false
@@ -2860,7 +2869,7 @@
       "company": "Samsung SmartThings",
       "product_name": "Samsung Signage",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Hub",
       "is_new": false,
       "company_is_new": false
@@ -2869,7 +2878,7 @@
       "company": "Samsung SmartThings",
       "product_name": "Samsung Smart TV",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Hub",
       "is_new": false,
       "company_is_new": false
@@ -2887,7 +2896,7 @@
       "company": "Samsung SmartThings",
       "product_name": "Samsung SmartThings Station",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Hub",
       "is_new": false,
       "company_is_new": false
@@ -2896,7 +2905,7 @@
       "company": "Samsung SmartThings",
       "product_name": "Samsung Soundbar",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Hub",
       "is_new": false,
       "company_is_new": false
@@ -2905,7 +2914,7 @@
       "company": "Samsung SmartThings",
       "product_name": "SmartThings Hub V3",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Hub",
       "is_new": false,
       "company_is_new": false
@@ -2941,7 +2950,7 @@
       "company": "Sercomm Corporation",
       "product_name": "SAX2V1R",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Wi-Fi Access Point",
       "is_new": false,
       "company_is_new": false
@@ -2950,7 +2959,7 @@
       "company": "Sercomm Corporation",
       "product_name": "SBE1V1R",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Wi-Fi Access Point",
       "is_new": false,
       "company_is_new": false
@@ -3076,7 +3085,7 @@
       "company": "Siemens",
       "product_name": "Thread Border Router",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "-",
       "is_new": false,
       "company_is_new": false
@@ -3382,7 +3391,7 @@
       "company": "Tuya Global Inc",
       "product_name": "Motion Sensor",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Presence",
       "is_new": false,
       "company_is_new": false
@@ -3553,7 +3562,7 @@
       "company": "Watts Water Technologies",
       "product_name": "tekmar Wireless Mesh Indoor Sensor 042",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Temperature",
       "is_new": false,
       "company_is_new": false
@@ -3562,7 +3571,7 @@
       "company": "Watts Water Technologies",
       "product_name": "tekmar Wireless Mesh Outdoor Sensor 043",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Temperature",
       "is_new": false,
       "company_is_new": false
@@ -3571,7 +3580,7 @@
       "company": "What's Matter Inc.",
       "product_name": "Air Quality Sensor",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Air",
       "is_new": false,
       "company_is_new": false
@@ -3580,7 +3589,7 @@
       "company": "What's Matter Inc.",
       "product_name": "Light Sensor",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Light",
       "is_new": false,
       "company_is_new": false
@@ -3589,7 +3598,7 @@
       "company": "What's Matter Inc.",
       "product_name": "Radar Presence Sensor",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Presence",
       "is_new": false,
       "company_is_new": false
@@ -3598,7 +3607,7 @@
       "company": "What's Matter Inc.",
       "product_name": "Smoke Sensor",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Smoke alarm",
       "is_new": false,
       "company_is_new": false
@@ -3607,7 +3616,7 @@
       "company": "What's Matter Inc.",
       "product_name": "Temperature and Humidity Sensor",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Temperature",
       "is_new": false,
       "company_is_new": false
@@ -3616,7 +3625,7 @@
       "company": "What's Matter Inc.",
       "product_name": "Vibration Sensor",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "-",
       "is_new": false,
       "company_is_new": false
@@ -3625,7 +3634,7 @@
       "company": "What's Matter Inc.",
       "product_name": "Window and Door Sensor",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Contact",
       "is_new": false,
       "company_is_new": false
@@ -3634,7 +3643,7 @@
       "company": "WideSky.cloud Pty. Ltd",
       "product_name": "WideSky Hub",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Hub",
       "is_new": false,
       "company_is_new": false
@@ -3724,7 +3733,7 @@
       "company": "Zemismart Technology Limited",
       "product_name": "Zemismart Motion Detector",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Sensor",
       "sub_category": "Presence",
       "is_new": false,
       "company_is_new": false
@@ -3940,7 +3949,7 @@
       "company": "tado",
       "product_name": "Heat Pump Optimizer",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "Heating",
       "is_new": false,
       "company_is_new": false
@@ -3949,7 +3958,7 @@
       "company": "tado",
       "product_name": "Internet Bridge X",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
+      "device_type": "Infrastructure",
       "sub_category": "-",
       "is_new": false,
       "company_is_new": false
