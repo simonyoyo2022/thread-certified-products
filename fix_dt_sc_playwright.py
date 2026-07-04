@@ -19,7 +19,8 @@ from datetime import datetime
 from playwright.sync_api import sync_playwright
 
 BASE_URL = "https://threadgroup.org/Certified-Products"
-PRODUCTS_FILE = "/Users/yoyolin/project/Thread/data/products.json"
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PRODUCTS_FILE = os.path.join(_BASE_DIR, "data", "products.json")
 
 DEVICE_TYPES = [
     (0, "Automation control"), (1, "Chipset"), (2, "HVAC"),

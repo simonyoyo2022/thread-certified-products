@@ -678,6 +678,48 @@ def load_cached_data():
         return json.load(f)
 
 
+def run_phase1_only():
+    """Run Phase 1 only (company + product scraping, no DT/SC).
+    Used by GitHub Actions before the Playwright DT/SC step.
+    Preserves existing device_type/sub_category if products.json already exists.
+    """
+    global _cancel_flag
+    _cancel_flag = False
+
+    os.makedirs(DATA_DIR, exist_ok=True)
+    scraper = ThreadGroupScraper()
+
+    # Load existing DT/SC data to preserve after re-scrape
+    existing_dt_sc = {}
+    if os.path.exists(PRODUCTS_FILE):
+        try:
+            with open(PRODUCTS_FILE, encoding='utf-8') as f:
+                old_data = json.load(f)
+            for p in old_data.get('products', []):
+                existing_dt_sc[p['product_name']] = {
+                    'device_type': p.get('device_type', '-'),
+                    'sub_category': p.get('sub_category', '-'),
+                }
+            logger.info(f"Loaded {len(existing_dt_sc)} existing DT/SC mappings")
+        except Exception as e:
+            logger.warning(f"Could not load existing DT/SC: {e}")
+
+    scraper.init()
+    logger.info("Phase 1: Scanning all companies...")
+    scraper.phase1_scan_companies()
+
+    # Build results with preserved DT/SC
+    results = scraper.build_results()
+    for r in results:
+        saved = existing_dt_sc.get(r['product_name'], {})
+        r['device_type']  = saved.get('device_type', '-')
+        r['sub_category'] = saved.get('sub_category', '-')
+
+    output = scraper.save_to_json(results)
+    logger.info(f"Phase 1 done: {len(results)} products from {output['total_companies']} companies")
+    return output
+
+
 if __name__ == '__main__':
     logging.basicConfig(
         level=logging.INFO,

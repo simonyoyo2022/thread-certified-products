@@ -16,8 +16,9 @@ import json
 import os
 from datetime import datetime
 
-PRODUCTS_FILE = "/Users/yoyolin/project/Thread/data/products.json"
-OUTPUT_PATH   = "/Users/yoyolin/project/Thread/Thread_Certified_Products_All.xlsx"
+_BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
+PRODUCTS_FILE = os.path.join(_BASE_DIR, "data", "products.json")
+OUTPUT_PATH   = os.path.join(_BASE_DIR, "Thread_Certified_Products_All.xlsx")
 
 # ── Color palette ───────────────────────────────────
 C_HEADER_BG = "1F3864"
