@@ -14,11 +14,15 @@ jobs:
   scrape-and-update:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    permissions:
+      contents: write   # 允許 bot 推送 commit
 
     steps:
       # ── 1. Checkout ──────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # 完整歷史，避免 push 衝突
 
       # ── 2. Python 環境 ────────────────────────────────────────
       - name: Set up Python 3.11
@@ -160,7 +164,6 @@ jobs:
           ${SUMMARY}"
 
       - name: Push to GitHub
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push origin HEAD:main
