@@ -142,18 +142,22 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/products.json data/changes.json Thread_Certified_Products_All.xlsx
-          # 備份不需要提交到 repo
-          git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d') [skip ci]
-          
-          $(python -c \"
-          import json
+          # 取得變更摘要（獨立執行避免 shell 引號問題）
+          SUMMARY=$(python - <<'PYEOF'
+          import json, sys
           try:
               c = json.load(open('data/changes.json'))
               s = c.get('stats', {})
-              print(f'+{s.get(\\\"new_products_count\\\",0)} products, +{s.get(\\\"new_companies_count\\\",0)} companies')
-          except:
+              print(f"+{s.get('new_products_count',0)} products, +{s.get('new_companies_count',0)} companies")
+          except Exception as e:
               print('data updated')
-          \")"
+          PYEOF
+          )
+          DATE=$(date '+%Y-%m-%d')
+          # 只有有變更才 commit
+          git diff --staged --quiet || git commit -m "🤖 Auto-update: ${DATE} [skip ci]
+
+          ${SUMMARY}"
 
       - name: Push to GitHub
         uses: ad-m/github-push-action@master
