@@ -334,6 +334,58 @@ tbody td.company { font-weight: 500; }
 .tag-dt   { background: rgba(0,200,150,0.12);  color: #34d399; border: 1px solid rgba(0,200,150,0.25); }
 .tag-sc   { background: rgba(139,92,246,0.12); color: #a78bfa; border: 1px solid rgba(139,92,246,0.25); }
 .tag-na   { background: rgba(100,116,139,0.1); color: #64748b; border: 1px solid rgba(100,116,139,0.2); }
+.tag-new  { background: rgba(16,185,129,0.18); color: #10b981; border: 1px solid rgba(16,185,129,0.35);
+            font-weight:700; animation: pulse-new 2s infinite; }
+.tag-removed { background: rgba(239,68,68,0.12); color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
+.tag-changed { background: rgba(245,158,11,0.12); color: #fbbf24; border: 1px solid rgba(245,158,11,0.25); }
+@keyframes pulse-new {
+  0%,100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
+  50%     { box-shadow: 0 0 0 3px rgba(16,185,129,0.2); }
+}
+.row-new  { background: rgba(16,185,129,0.05) !important; }
+.row-new:hover { background: rgba(16,185,129,0.1) !important; }
+/* Changes tab cards */
+.changes-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px; margin-top: 16px;
+}
+@media (max-width: 900px) { .changes-grid { grid-template-columns: 1fr; } }
+.changes-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden;
+}
+.changes-card-header {
+  padding: 14px 18px 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.changes-card-title { font-weight: 700; font-size: 14px; }
+.changes-count {
+  font-size: 11px; font-weight: 700; padding: 2px 8px;
+  border-radius: 10px;
+}
+.changes-count-green  { background: rgba(16,185,129,0.15); color: #10b981; }
+.changes-count-red    { background: rgba(239,68,68,0.12);  color: #f87171; }
+.changes-count-yellow { background: rgba(245,158,11,0.12); color: #fbbf24; }
+.changes-list { padding: 0; margin: 0; list-style: none; max-height: 360px; overflow-y: auto; }
+.changes-list li {
+  padding: 10px 18px; border-bottom: 1px solid var(--border);
+  font-size: 12.5px; display: flex; flex-direction: column; gap: 3px;
+}
+.changes-list li:last-child { border-bottom: none; }
+.changes-company { color: var(--text-muted); font-size: 11px; }
+.changes-name { color: var(--text-primary); font-weight: 500; }
+.changes-diff { color: var(--text-muted); font-size: 11px; }
+.changes-diff em { color: #10b981; font-style: normal; font-weight: 600; }
+.changes-diff s  { color: #f87171; }
+.changes-banner {
+  background: linear-gradient(135deg, rgba(16,185,129,0.12), rgba(16,185,129,0.04));
+  border: 1px solid rgba(16,185,129,0.25); border-radius: 12px;
+  padding: 16px 20px; margin-bottom: 16px; display: flex; align-items: center; gap: 14px;
+}
+.changes-banner-icon { font-size: 28px; }
+.changes-banner-text h3 { margin: 0 0 4px; font-size: 15px; color: #10b981; }
+.changes-banner-text p  { margin: 0; font-size: 12px; color: var(--text-muted); }
 
 .pagination {
   display: flex; align-items: center; justify-content: space-between;
@@ -503,6 +555,9 @@ tbody td.company { font-weight: 500; }
     </a>
     <a class="nav-item" onclick="showTab('charts')">
       <span class="icon">📈</span> 分析圖表
+    </a>
+    <a class="nav-item" onclick="showTab('changes')" id="navChanges">
+      <span class="icon">🆕</span> 本月變更
     </a>
   </div>
 
@@ -721,6 +776,41 @@ tbody td.company { font-weight: 500; }
       </div>
     </div><!-- /tab-charts -->
 
+    <!-- ─── CHANGES TAB ──────────────────────────────── -->
+    <div class="tab-content" id="tab-changes">
+      <div id="changesBanner" style="display:none;"></div>
+      <div class="changes-grid" id="changesGrid">
+        <div class="changes-card">
+          <div class="changes-card-header">
+            <span class="changes-card-title">🆕 新增產品</span>
+            <span class="changes-count changes-count-green" id="newProductsCount">0</span>
+          </div>
+          <ul class="changes-list" id="newProductsList"><li style="color:var(--text-muted);padding:16px;">載入中...</li></ul>
+        </div>
+        <div class="changes-card">
+          <div class="changes-card-header">
+            <span class="changes-card-title">🆕 新增公司</span>
+            <span class="changes-count changes-count-green" id="newCompaniesCount">0</span>
+          </div>
+          <ul class="changes-list" id="newCompaniesList"><li style="color:var(--text-muted);padding:16px;">載入中...</li></ul>
+        </div>
+        <div class="changes-card">
+          <div class="changes-card-header">
+            <span class="changes-card-title">➖ 移除產品</span>
+            <span class="changes-count changes-count-red" id="removedProductsCount">0</span>
+          </div>
+          <ul class="changes-list" id="removedProductsList"><li style="color:var(--text-muted);padding:16px;">載入中...</li></ul>
+        </div>
+        <div class="changes-card">
+          <div class="changes-card-header">
+            <span class="changes-card-title">🔄 分類變更</span>
+            <span class="changes-count changes-count-yellow" id="changedProductsCount">0</span>
+          </div>
+          <ul class="changes-list" id="changedProductsList"><li style="color:var(--text-muted);padding:16px;">載入中...</li></ul>
+        </div>
+      </div>
+    </div><!-- /tab-changes -->
+
     <!-- ─── SETTINGS TAB ───────────────────────────────── -->
     <div class="tab-content" id="tab-settings">
       <div class="section">
@@ -797,7 +887,8 @@ const TAB_META = {
   dashboard: { title: 'Dashboard', subtitle: 'Thread Group 認證產品總覽' },
   companies:  { title: '公司列表', subtitle: '所有認證公司及其產品統計' },
   products:   { title: '產品目錄', subtitle: '完整認證產品清單' },
-  charts:     { title: '分析圖表', subtitle: '深度資料視覺化分析' },
+  charts:     { title: '分析圖表',  subtitle: '深度資料視覺化分析' },
+  changes:    { title: '本月變更',  subtitle: '與上次更新相比的新增 / 移除 / 分類變更' },
   settings:   { title: '設定 / 紀錄', subtitle: '排程設定與抓取歷史紀錄' },
 };
 
@@ -811,6 +902,7 @@ function showTab(tab) {
   document.getElementById('pageTitle').textContent = TAB_META[tab]?.title || tab;
   document.getElementById('pageSubtitle').textContent = TAB_META[tab]?.subtitle || '';
   if (tab === 'settings') loadLogs();
+  if (tab === 'changes')  loadChanges();
   // Update mobile nav active state
   document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
   const mnavBtn = document.getElementById('mnav-' + tab);
@@ -838,6 +930,15 @@ async function loadData() {
       const dt = new Date(dataRes.last_updated);
       document.getElementById('lastUpdated').textContent =
         '最後更新：' + dt.toLocaleString('zh-TW');
+      // Show changes badge in nav if there are new items
+      fetch('/api/changes').then(r=>r.json()).then(ch => {
+        const s = ch.stats || {};
+        const hasNew = (s.new_products_count||0) + (s.new_companies_count||0) > 0;
+        if (hasNew) {
+          const nav = document.getElementById('navChanges');
+          if (nav) nav.innerHTML = '<span class="icon">🆕</span> 本月變更 <span class="tag tag-new" style="font-size:10px;margin-left:4px;">' + (s.new_products_count||0) + '件新增</span>';
+        }
+      }).catch(()=>{});
     } else {
       showEmptyState();
     }
@@ -1157,15 +1258,17 @@ function renderCompanyTable() {
   }
   filteredCompanies.forEach((c, i) => {
     const tr = document.createElement('tr');
+    const newBadge = c.is_new ? ' <span class="tag tag-new">🆕 NEW</span>' : '';
     const ptTags = c.product_types.map(pt =>
       `<span class="tag ${pt==='Built on Thread'?'tag-bot':'tag-tcc'}">${pt==='Built on Thread'?'BOT':'TCC'}</span>`
     ).join(' ');
     const dtTags = c.device_types.slice(0,3).map(dt =>
       `<span class="tag tag-dt" style="margin:1px;">${dt}</span>`
     ).join('') + (c.device_types.length>3 ? `<span class="tag tag-na">+${c.device_types.length-3}</span>`:'');
+    if (c.is_new) tr.classList.add('row-new');
     tr.innerHTML = `
       <td>${i+1}</td>
-      <td class="company">${c.name}</td>
+      <td class="company">${c.name}${newBadge}</td>
       <td style="text-align:center;font-weight:700;color:var(--blue-light);">${c.total}</td>
       <td>${dtTags}</td>
       <td>${ptTags}</td>
@@ -1234,6 +1337,8 @@ function renderProductTable() {
 
   page.forEach((p, i) => {
     const tr = document.createElement('tr');
+    if (p.is_new) tr.classList.add('row-new');
+    const newBadge = p.is_new ? ' <span class="tag tag-new" style="font-size:10px;">🆕</span>' : '';
     const ptTag = `<span class="tag ${p.product_type==='Built on Thread'?'tag-bot':'tag-tcc'}">
       ${p.product_type==='Built on Thread'?'Built on Thread':'TCC'}</span>`;
     const dtTag = p.device_type!=='-' ? `<span class="tag tag-dt">${p.device_type}</span>` : '<span class="tag tag-na">—</span>';
@@ -1241,7 +1346,7 @@ function renderProductTable() {
     tr.innerHTML = `
       <td>${start+i+1}</td>
       <td class="company">${p.company}</td>
-      <td>${p.product_name}</td>
+      <td>${p.product_name}${newBadge}</td>
       <td>${ptTag}</td>
       <td>${dtTag}</td>
       <td>${scTag}</td>
@@ -1358,7 +1463,98 @@ function downloadExcel() {
 // ═══════════════════════════════════════════════════════════
 // LOGS
 // ═══════════════════════════════════════════════════════════
+async function loadChanges() {
+  try {
+    const ch = await fetch('/api/changes').then(r => r.json());
+    const s  = ch.stats || {};
+    const prev = ch.previous_date
+      ? '（與 ' + new Date(ch.previous_date).toLocaleDateString('zh-TW') + ' 相比）'
+      : '';
+
+    // Banner
+    const banner = document.getElementById('changesBanner');
+    if (!ch.is_first_run && (s.new_products_count || s.new_companies_count || s.removed_products_count)) {
+      banner.style.display = 'flex';
+      banner.className = 'changes-banner';
+      banner.innerHTML = `
+        <div class="changes-banner-icon">📋</div>
+        <div class="changes-banner-text">
+          <h3>本月共發現 ${s.new_products_count||0} 件新增產品、${s.new_companies_count||0} 家新增公司${prev}</h3>
+          <p>產品總數：${s.total_products_old||0} → ${s.total_products_new||0}　
+             公司總數：${s.total_companies_old||0} → ${s.total_companies_new||0}</p>
+        </div>`;
+    } else if (ch.is_first_run) {
+      banner.style.display = 'flex';
+      banner.className = 'changes-banner';
+      banner.style.background = 'linear-gradient(135deg,rgba(29,106,255,0.1),rgba(29,106,255,0.03))';
+      banner.style.borderColor = 'rgba(29,106,255,0.2)';
+      banner.innerHTML = `<div class="changes-banner-icon">ℹ️</div>
+        <div class="changes-banner-text">
+          <h3 style="color:#60a5fa;">首次快照已建立</h3>
+          <p>下次抓取後將自動顯示差異比對。</p>
+        </div>`;
+    } else {
+      banner.style.display = 'none';
+    }
+
+    // Helper to render list
+    const renderList = (ulId, items, renderFn, emptyMsg) => {
+      const ul = document.getElementById(ulId);
+      if (!items || !items.length) {
+        ul.innerHTML = `<li style="color:var(--text-muted);padding:16px;text-align:center;">${emptyMsg}</li>`;
+        return;
+      }
+      ul.innerHTML = items.map(renderFn).join('');
+    };
+
+    // Counts
+    document.getElementById('newProductsCount').textContent  = s.new_products_count  || 0;
+    document.getElementById('newCompaniesCount').textContent = s.new_companies_count  || 0;
+    document.getElementById('removedProductsCount').textContent = s.removed_products_count || 0;
+    document.getElementById('changedProductsCount').textContent = s.changed_products_count || 0;
+
+    // New products
+    renderList('newProductsList', ch.new_products, p => `
+      <li>
+        <span class="changes-company">${p.company}</span>
+        <span class="changes-name">${p.product_name}</span>
+        <span class="changes-diff">
+          ${p.device_type && p.device_type!=='-' ? '<span class="tag tag-dt" style="font-size:10px;">'+p.device_type+'</span>' : ''}
+          ${p.product_type==='Built on Thread' ? '<span class="tag tag-bot" style="font-size:10px;">BOT</span>' : '<span class="tag tag-tcc" style="font-size:10px;">TCC</span>'}
+        </span>
+      </li>`, '✅ 本月無新增產品');
+
+    // New companies
+    renderList('newCompaniesList', ch.new_companies, c => `
+      <li><span class="changes-name">${c}</span></li>`,
+      '✅ 本月無新增公司');
+
+    // Removed products
+    renderList('removedProductsList', ch.removed_products, p => `
+      <li>
+        <span class="changes-company">${p.company}</span>
+        <span class="changes-name" style="text-decoration:line-through;color:var(--text-muted);">${p.product_name}</span>
+      </li>`, '✅ 本月無移除產品');
+
+    // Changed products
+    renderList('changedProductsList', ch.changed_products, p => {
+      const diffs = p.changes.map(d =>
+        `<span class="changes-diff"><strong>${d.field}</strong>: <s>${d.old}</s> → <em>${d.new}</em></span>`
+      ).join('');
+      return `<li>
+        <span class="changes-company">${p.company}</span>
+        <span class="changes-name">${p.product_name}</span>
+        ${diffs}
+      </li>`;
+    }, '✅ 本月無分類變更');
+
+  } catch(e) {
+    console.warn('loadChanges error:', e);
+  }
+}
+
 async function loadLogs() {
+
   const logs = await fetch('/api/logs').then(r=>r.json());
   const tbody = document.getElementById('logTableBody');
   tbody.innerHTML = '';
@@ -1422,8 +1618,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   <button class="mobile-nav-btn" id="mnav-products" onclick="showTab('products')">
     📦<span>產品</span>
   </button>
-  <button class="mobile-nav-btn" id="mnav-charts" onclick="showTab('charts')">
-    📈<span>圖表</span>
+  <button class="mobile-nav-btn" id="mnav-changes" onclick="showTab('changes')">
+    🆕<span>變更</span>
   </button>
   <button class="mobile-nav-btn" id="mnav-settings" onclick="showTab('settings')">
     ⚙️<span>設定</span>

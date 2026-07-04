@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-04T14:29:28.456291",
+  "previous_date": null,
+  "is_first_run": true,
+  "new_companies": [],
+  "removed_companies": [],
+  "new_products": [],
+  "removed_products": [],
+  "changed_products": [],
+  "stats": {
+    "total_products_new": 440,
+    "total_products_old": 0,
+    "total_companies_new": 128,
+    "total_companies_old": 0,
+    "new_products_count": 0,
+    "removed_products_count": 0,
+    "new_companies_count": 0,
+    "removed_companies_count": 0,
+    "changed_products_count": 0
+  }
+}

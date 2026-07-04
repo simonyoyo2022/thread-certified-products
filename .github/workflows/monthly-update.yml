@@ -1,10 +1,8 @@
 name: Monthly Auto-Update Thread Data
 
 on:
-  # 每月 28 日 15:00 UTC（= 台灣 23:00）自動執行
   schedule:
-    - cron: '0 15 28 * *'
-  # 也可手動觸發
+    - cron: '0 15 28 * *'   # 每月 28 日 23:00 台灣時間
   workflow_dispatch:
     inputs:
       reason:
@@ -29,60 +27,133 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
 
-      # ── 3. 安裝 Python 依賴 ──────────────────────────────────
+      # ── 3. 安裝依賴 ─────────────────────────────────────────
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      # ── 4. 安裝 Playwright Chromium（GitHub Actions 支援）────
+      # ── 4. 安裝 Playwright Chromium ──────────────────────────
       - name: Install Playwright Chromium
         run: python -m playwright install chromium --with-deps
 
-      # ── 5. Phase 1：抓取所有公司產品清單（urllib，無需 Playwright）
-      - name: Phase 1 - Scrape all companies & products
+      # ── 5. 備份上次資料（用於差異比對）─────────────────────
+      - name: Backup previous products.json
+        run: |
+          if [ -f data/products.json ]; then
+            cp data/products.json data/products_previous.json
+            echo "✅ Backed up previous data"
+          else
+            echo "ℹ️  No previous data to backup"
+          fi
+
+      # ── 6. Phase 1：動態抓取所有公司 + 產品（urllib）────────
+      #       scraper.py 的 init() 會從網站讀取所有公司，不限定數量
+      - name: Phase 1 - Scrape ALL companies & products (dynamic discovery)
         run: |
           python -c "
-          import logging, json, os
-          logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
+          import logging, sys
+          logging.basicConfig(
+              level=logging.INFO,
+              format='%(asctime)s %(message)s',
+              stream=sys.stdout)
           import scraper as sc
-          sc.run_phase1_only()
+          result = sc.run_phase1_only()
+          if result:
+              print(f'Phase 1 done: {result[\"total_products\"]} products from {result[\"total_companies\"]} companies')
           "
         env:
           PYTHONUNBUFFERED: '1'
 
-      # ── 6. Phase 2+3：Playwright 抓取 Device Type & Sub Category
-      - name: Phase 2+3 - Scrape Device Type & Sub Category
+      # ── 7. Phase 2+3：Playwright 掃描 DT & SC ────────────────
+      - name: Phase 2+3 - Scrape Device Type & Sub Category (Playwright)
         run: python fix_dt_sc_playwright.py
         env:
           PYTHONUNBUFFERED: '1'
 
-      # ── 7. 生成 Excel 報表 ───────────────────────────────────
+      # ── 8. 差異比對 — 找出新增 / 移除 / 變更 ─────────────────
+      - name: Diff — detect new/removed/changed products & companies
+        run: python diff_changes.py
+        env:
+          PYTHONUNBUFFERED: '1'
+
+      # ── 9. 生成 Excel 報表 ───────────────────────────────────
       - name: Generate Excel report
         run: python generate_excel_all.py
 
-      # ── 8. 顯示更新結果 ──────────────────────────────────────
-      - name: Show results
+      # ── 10. 建立 GitHub Actions Job Summary ─────────────────
+      - name: Write Job Summary
         run: |
           python -c "
-          import json
+          import json, os
           with open('data/products.json') as f:
               d = json.load(f)
           prods = d['products']
           companies = len(set(p['company'] for p in prods))
-          mapped_dt = sum(1 for p in prods if p.get('device_type','-') != '-')
-          mapped_sc = sum(1 for p in prods if p.get('sub_category','-') != '-')
-          print(f'✅ Products: {len(prods)} | Companies: {companies}')
-          print(f'   DT mapped: {mapped_dt}/{len(prods)} | SC mapped: {mapped_sc}/{len(prods)}')
-          print(f'   Last updated: {d.get(\"last_updated\",\"N/A\")}')
-          "
+          new_p = sum(1 for p in prods if p.get('is_new'))
+          new_c = sum(1 for p in prods if p.get('company_is_new'))
 
-      # ── 9. Commit 並 Push 更新後的資料 ───────────────────────
+          changes = {}
+          if os.path.exists('data/changes.json'):
+              with open('data/changes.json') as f:
+                  changes = json.load(f)
+
+          s = changes.get('stats', {})
+          lines = [
+            '## 🧵 Thread Group Data Update',
+            f'| 項目 | 上次 | 本次 | 變更 |',
+            f'|------|------|------|------|',
+            f'| 產品數 | {s.get(\"total_products_old\",\"—\")} | {len(prods)} | +{s.get(\"new_products_count\",0)} / -{s.get(\"removed_products_count\",0)} |',
+            f'| 公司數 | {s.get(\"total_companies_old\",\"—\")} | {companies} | +{s.get(\"new_companies_count\",0)} / -{s.get(\"removed_companies_count\",0)} |',
+            f'| 分類變更 | — | — | {s.get(\"changed_products_count\",0)} |',
+          ]
+          if changes.get('new_companies'):
+              lines.append('')
+              lines.append('### 🆕 新增公司')
+              for c in changes['new_companies']:
+                  lines.append(f'- {c}')
+          if changes.get('new_products'):
+              lines.append('')
+              lines.append(f'### 🆕 新增產品 ({len(changes[\"new_products\"])} 個)')
+              for p in changes['new_products'][:20]:
+                  lines.append(f'- [{p[\"company\"]}] {p[\"product_name\"]}')
+              if len(changes['new_products']) > 20:
+                  lines.append(f'- ... 還有 {len(changes[\"new_products\"])-20} 個')
+          if changes.get('removed_products'):
+              lines.append('')
+              lines.append(f'### ➖ 移除產品 ({len(changes[\"removed_products\"])} 個)')
+              for p in changes['removed_products'][:10]:
+                  lines.append(f'- [{p[\"company\"]}] {p[\"product_name\"]}')
+          if changes.get('changed_products'):
+              lines.append('')
+              lines.append(f'### 🔄 分類變更 ({len(changes[\"changed_products\"])} 個)')
+              for p in changes['changed_products'][:10]:
+                  for chg in p['changes']:
+                      lines.append(f'- [{p[\"company\"]}] {p[\"product_name\"]}: {chg[\"field\"]} \"{chg[\"old\"]}\" → \"{chg[\"new\"]}\"')
+
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              f.write('\n'.join(lines) + '\n')
+          print('Job summary written.')
+          "
+        env:
+          PYTHONUNBUFFERED: '1'
+
+      # ── 11. Commit 更新後的資料 ──────────────────────────────
       - name: Commit updated data
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/products.json Thread_Certified_Products_All.xlsx
-          # 只有有變更才 commit
-          git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d %H:%M UTC') [skip ci]"
+          git add data/products.json data/changes.json Thread_Certified_Products_All.xlsx
+          # 備份不需要提交到 repo
+          git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d') [skip ci]
+          
+          $(python -c \"
+          import json
+          try:
+              c = json.load(open('data/changes.json'))
+              s = c.get('stats', {})
+              print(f'+{s.get(\\\"new_products_count\\\",0)} products, +{s.get(\\\"new_companies_count\\\",0)} companies')
+          except:
+              print('data updated')
+          \")"
 
       - name: Push to GitHub
         uses: ad-m/github-push-action@master

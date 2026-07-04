@@ -46,6 +46,7 @@ scrape_lock = threading.Lock()
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 PRODUCTS_FILE = os.path.join(DATA_DIR, 'products.json')
+CHANGES_FILE  = os.path.join(DATA_DIR, 'changes.json')
 
 
 # ── Helper functions ───────────────────────────────────────
@@ -248,6 +249,17 @@ def api_logs():
         return jsonify(json.load(f))
 
 
+@app.route('/api/changes')
+def api_changes():
+    """Return latest change diff (new/removed/changed products & companies)."""
+    if not os.path.exists(CHANGES_FILE):
+        return jsonify({'is_first_run': True, 'stats': {}, 'new_products': [],
+                        'removed_products': [], 'changed_products': [],
+                        'new_companies': [], 'removed_companies': []})
+    with open(CHANGES_FILE, encoding='utf-8') as f:
+        return jsonify(json.load(f))
+
+
 @app.route('/api/companies')
 def api_companies():
     """Return summary data grouped by company."""
@@ -279,18 +291,21 @@ def api_companies():
                 companies[co]['sub_categories'].add(sc)
         if p.get('product_type'):
             companies[co]['product_types'].add(p['product_type'])
+        if p.get('company_is_new'):
+            companies[co]['is_new'] = True
     
-    # Convert sets to sorted lists
+    # Convert sets to sorted lists, include is_new flag
     result = []
     for co, info in sorted(companies.items(), key=lambda x: -x[1]['total']):
         result.append({
-            'name': co,
-            'total': info['total'],
-            'device_types': sorted(info['device_types']),
-            'sub_categories': sorted(info['sub_categories']),
+            'name':          co,
+            'total':         info['total'],
+            'device_types':  sorted(info['device_types']),
+            'sub_categories':sorted(info['sub_categories']),
             'product_types': sorted(info['product_types']),
+            'is_new':        info.get('is_new', False),
         })
-    
+
     return jsonify(result)
 
 
