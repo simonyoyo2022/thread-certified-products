@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-07-04T08:28:32.932823",
-  "total_products": 448,
-  "total_companies": 129,
+  "last_updated": "2026-07-28T17:06:18.575733",
+  "total_products": 456,
+  "total_companies": 132,
   "products": [
     {
       "company": "A solution Co., Ltd.",
       "product_name": "LumiMatter",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -17,7 +17,7 @@
       "product_name": "Eve Aqua",
       "product_type": "Built on Thread",
       "device_type": "Automation control",
-      "sub_category": "Irrigation",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -26,7 +26,7 @@
       "product_name": "Eve Aqua (v2)",
       "product_type": "Built on Thread",
       "device_type": "Automation control",
-      "sub_category": "Irrigation",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -71,7 +71,7 @@
       "product_name": "Eve Flare",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -188,7 +188,7 @@
       "product_name": "Aeotec Smart Home Hub",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -226,6 +226,15 @@
       "device_type": "Safety",
       "sub_category": "Door lock",
       "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "Amlogic Co., Ltd",
+      "product_name": "Single chip Wireless Series (W265x,W165x)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -350,7 +359,7 @@
       "product_name": "Homey Pro (Early 2023)",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -368,7 +377,7 @@
       "product_name": "BOKE WTL042S WSL042S Series",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -413,7 +422,7 @@
       "product_name": "Smart Night Light-T",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -710,9 +719,27 @@
       "product_name": "Controllable Color Light",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
+    },
+    {
+      "company": "EGLO LEUCHTEN",
+      "product_name": "Controllable Temperature Light",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light, Lighting",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "EMmicroelectronic",
+      "product_name": "em | bleu EM9305",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-",
+      "is_new": true,
+      "company_is_new": true
     },
     {
       "company": "Earda Technologies Co., Ltd",
@@ -737,26 +764,17 @@
       "product_name": "Smart Ceiling Light",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
     {
       "company": "Espressif Systems (Shanghai) Co., Ltd.",
-      "product_name": "ESP32-C5",
+      "product_name": "ESP32 C-series",
       "product_type": "Thread Certified Component",
       "device_type": "Chipset",
       "sub_category": "-",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
-      "company": "Espressif Systems (Shanghai) Co., Ltd.",
-      "product_name": "ESP32-C6",
-      "product_type": "Thread Certified Component",
-      "device_type": "Chipset",
-      "sub_category": "-",
-      "is_new": false,
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -766,6 +784,15 @@
       "device_type": "Chipset",
       "sub_category": "-",
       "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "Espressif Systems (Shanghai) Co., Ltd.",
+      "product_name": "Espressif Border Router Assembly (ESP32 C-series Host + ESP32 RCP)",
+      "product_type": "Thread Certified Component",
+      "device_type": "Chipset",
+      "sub_category": "-",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -782,7 +809,7 @@
       "product_name": "M5Stack Thread Border Router",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -953,9 +980,9 @@
       "product_name": "Smart Irrigation Valve",
       "product_type": "Built on Thread",
       "device_type": "Automation control",
-      "sub_category": "Irrigation",
-      "is_new": true,
-      "company_is_new": true
+      "sub_category": "-",
+      "is_new": false,
+      "company_is_new": false
     },
     {
       "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
@@ -969,6 +996,15 @@
     {
       "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
       "product_name": "Pergola Controller (AC296)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "-",
+      "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "Guangdong A-OK Technology Grand Development Co.,Ltd.",
+      "product_name": "Pergola Controller (AC297)",
       "product_type": "Built on Thread",
       "device_type": "Automation control",
       "sub_category": "-",
@@ -1046,6 +1082,15 @@
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
+    },
+    {
+      "company": "Hangzhou Wistar Mechanical & Electric Technology Co., Ltd",
+      "product_name": "Window covering WS001",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind",
+      "is_new": true,
+      "company_is_new": true
     },
     {
       "company": "Hinkley Lighting Inc.",
@@ -1142,7 +1187,7 @@
       "product_name": "HooRii Light",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1151,7 +1196,7 @@
       "product_name": "HooRii Light (Candle lamp)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1160,7 +1205,7 @@
       "product_name": "HooRii Light (Ceiling light)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1169,7 +1214,7 @@
       "product_name": "HooRii Light (Filament lamp)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1187,7 +1232,7 @@
       "product_name": "HooRii Light (Magnetic light fixture)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1196,7 +1241,7 @@
       "product_name": "HooRii Light (Panel light)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1205,7 +1250,7 @@
       "product_name": "HooRii Light (Pendant light)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1214,7 +1259,7 @@
       "product_name": "HooRii Light (Recessed light)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1232,7 +1277,7 @@
       "product_name": "HooRii Light (Spotlight)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1268,7 +1313,7 @@
       "product_name": "DUBBELKISEL",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -1340,7 +1385,7 @@
       "product_name": "KAJPLATS WS",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Bulb, Light",
+      "sub_category": "Bulb",
       "is_new": false,
       "company_is_new": false
     },
@@ -1349,7 +1394,7 @@
       "product_name": "KAJPLATS WS",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Bulb, Light",
+      "sub_category": "Bulb",
       "is_new": false,
       "company_is_new": false
     },
@@ -1412,7 +1457,7 @@
       "product_name": "VARMBLIXT table/wall lamp",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -1564,7 +1609,7 @@
       "company": "LEEDARSON IoT Technology Inc",
       "product_name": "Smart Plug",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Smart plug",
       "is_new": false,
       "company_is_new": false
@@ -1609,7 +1654,7 @@
       "company": "LG Electronics",
       "product_name": "LG Smart Button (1 Button)",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
@@ -1618,7 +1663,7 @@
       "company": "LG Electronics",
       "product_name": "LG Smart Button (2 Button)",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
@@ -1627,7 +1672,7 @@
       "company": "LG Electronics",
       "product_name": "LG Smart Plug",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Smart plug",
       "is_new": false,
       "company_is_new": false
@@ -1682,7 +1727,7 @@
       "product_name": "LG webOS TV",
       "product_type": "Thread Certified Component",
       "device_type": "-",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1700,7 +1745,7 @@
       "product_name": "Echo (E78T24)",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1709,7 +1754,7 @@
       "product_name": "Echo (MA49CA)",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1718,7 +1763,7 @@
       "product_name": "Echo (MD6NE4)",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1727,7 +1772,7 @@
       "product_name": "Echo (P8Z7MN)",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1736,7 +1781,7 @@
       "product_name": "Echo (PE4Z26)",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1862,7 +1907,7 @@
       "product_name": "Aqara Hub M3",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1906,8 +1951,8 @@
       "company": "Lumi United Technology Co., Ltd",
       "product_name": "Camera Hub G350",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
-      "sub_category": "Hub",
+      "device_type": "Automation control",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1916,7 +1961,7 @@
       "product_name": "Camera Hub G5 Pro (PoE)",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1925,7 +1970,7 @@
       "product_name": "Camera Hub G5 Pro (Wi-Fi)",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1943,7 +1988,7 @@
       "product_name": "Constant Current Driver T3 (40W)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -1952,7 +1997,7 @@
       "product_name": "Constant Current Driver T3 (75W)",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -1960,8 +2005,8 @@
       "company": "Lumi United Technology Co., Ltd",
       "product_name": "DIN Rail Hub AX100M",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
-      "sub_category": "Hub",
+      "device_type": "Automation control",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1987,8 +2032,8 @@
       "company": "Lumi United Technology Co., Ltd",
       "product_name": "Doorbell Camera Hub G410",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
-      "sub_category": "Hub",
+      "device_type": "Automation control",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -1996,8 +2041,8 @@
       "company": "Lumi United Technology Co., Ltd",
       "product_name": "Edge Hub GX300M",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
-      "sub_category": "Hub",
+      "device_type": "Automation control",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -2005,8 +2050,8 @@
       "company": "Lumi United Technology Co., Ltd",
       "product_name": "Edge Hub M300",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
-      "sub_category": "Hub",
+      "device_type": "Automation control",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -2023,8 +2068,8 @@
       "company": "Lumi United Technology Co., Ltd",
       "product_name": "Hub AX200M",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
-      "sub_category": "Hub",
+      "device_type": "Automation control",
+      "sub_category": "Hub, Irrigation",
       "is_new": false,
       "company_is_new": false
     },
@@ -2051,7 +2096,7 @@
       "product_name": "Thread Mesh Extender",
       "product_type": "Built on Thread",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2375,7 +2420,7 @@
       "product_name": "Nanoleaf Essentials Smart Ceiling Light",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2393,7 +2438,7 @@
       "product_name": "Umbra Cono Lamp",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2402,7 +2447,7 @@
       "product_name": "Umbra Cup Lamp",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2524,10 +2569,19 @@
       "company_is_new": false
     },
     {
+      "company": "Qingdao Heffeix Technology Co., Ltd",
+      "product_name": "Heffeix-BR",
+      "product_type": "Thread Certified Component",
+      "device_type": "-",
+      "sub_category": "-",
+      "is_new": true,
+      "company_is_new": true
+    },
+    {
       "company": "Qingdao Yeelink Information Technology Co., Ltd",
       "product_name": "Smart Switch",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
@@ -2537,7 +2591,7 @@
       "product_name": "Yeelight Pro Smart Home Hub",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2564,7 +2618,7 @@
       "product_name": "Yeelight Smart Ceiling Fan-Light S1",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2573,7 +2627,7 @@
       "product_name": "Yeelight Smart LED Bedside Lamp D1",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2582,7 +2636,7 @@
       "product_name": "Yeelight Smart LED Desk Lamp D1",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2680,7 +2734,7 @@
       "company": "Rafael Microelectronics, Inc.",
       "product_name": "Smart Wall Switch",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
@@ -2734,7 +2788,7 @@
       "company": "Robert Bosch GmbH",
       "product_name": "Plug Compact [+M]",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Smart plug",
       "is_new": false,
       "company_is_new": false
@@ -2861,7 +2915,7 @@
       "product_name": "Samsung Monitor",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2870,7 +2924,7 @@
       "product_name": "Samsung Signage",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2879,7 +2933,7 @@
       "product_name": "Samsung Smart TV",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2887,8 +2941,8 @@
       "company": "Samsung SmartThings",
       "product_name": "Samsung SmartThings Hub V3",
       "product_type": "Thread Certified Component",
-      "device_type": "-",
-      "sub_category": "Hub",
+      "device_type": "Automation control",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2897,7 +2951,7 @@
       "product_name": "Samsung SmartThings Station",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2906,7 +2960,7 @@
       "product_name": "Samsung Soundbar",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2915,7 +2969,7 @@
       "product_name": "SmartThings Hub V3",
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -2974,19 +3028,10 @@
       "company_is_new": false
     },
     {
-      "company": "Shenzhen Conex Intelligent Technology Co.,Ltd",
-      "product_name": "Philips Smart Lock",
-      "product_type": "Built on Thread",
-      "device_type": "Safety",
-      "sub_category": "Door lock",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
       "company": "Shenzhen Haojai Lianchuang Technology Co.,Ltd",
       "product_name": "HAOJAI Smart Switch",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
@@ -3022,7 +3067,7 @@
       "company": "Shenzhen Heiman Technology Co., Ltd.",
       "product_name": "Smart Plug (HS2SK series)",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Smart plug",
       "is_new": false,
       "company_is_new": false
@@ -3044,6 +3089,24 @@
       "sub_category": "Water",
       "is_new": false,
       "company_is_new": false
+    },
+    {
+      "company": "Shenzhen Sonoff Technologies Co.,Ltd.",
+      "product_name": "SONOFF Zigbee/Thread Motion Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence",
+      "is_new": true,
+      "company_is_new": true
+    },
+    {
+      "company": "Shenzhen Sonoff Technologies Co.,Ltd.",
+      "product_name": "Zigbee/Thread Door Window Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact",
+      "is_new": true,
+      "company_is_new": true
     },
     {
       "company": "Shenzhen Sunricher Technology Co.,Ltd.",
@@ -3256,7 +3319,7 @@
       "company": "Sleekpoint Innovations Company Limited",
       "product_name": "Button Controller",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
@@ -3365,7 +3428,7 @@
       "product_name": "Smart Night Light-T",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "Light, Lighting",
       "is_new": false,
       "company_is_new": false
     },
@@ -3469,6 +3532,15 @@
       "company_is_new": false
     },
     {
+      "company": "Tuya Global Inc",
+      "product_name": "Wireless Module E2-U",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
       "company": "Vitrumshade LLC",
       "product_name": "Smart Internal Blinds",
       "product_type": "Built on Thread",
@@ -3517,7 +3589,7 @@
       "company": "WAREMA Renkhoff SE",
       "product_name": "Xeenos Go Aktor Switch 2K UP",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
@@ -3590,7 +3662,7 @@
       "product_name": "Light Sensor",
       "product_type": "Built on Thread",
       "device_type": "Sensor",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -3644,7 +3716,7 @@
       "product_name": "WideSky Hub",
       "product_type": "Built on Thread",
       "device_type": "Infrastructure",
-      "sub_category": "Hub",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -3724,7 +3796,7 @@
       "company": "Zemismart Technology Limited",
       "product_name": "Zemismart MT01 Slide Curtain",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Curtain",
       "is_new": false,
       "company_is_new": false
@@ -3779,7 +3851,7 @@
       "product_name": "Crystal Series Rechargeable Lamp",
       "product_type": "Built on Thread",
       "device_type": "Lighting",
-      "sub_category": "Light",
+      "sub_category": "-",
       "is_new": false,
       "company_is_new": false
     },
@@ -3985,7 +4057,7 @@
       "company": "tado",
       "product_name": "Smart Thermostat X",
       "product_type": "Built on Thread",
-      "device_type": "-",
+      "device_type": "Automation control",
       "sub_category": "Heating",
       "is_new": false,
       "company_is_new": false
