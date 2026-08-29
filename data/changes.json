@@ -1,102 +1,186 @@
 {
-  "generated_at": "2026-07-28T17:06:18.658035",
-  "previous_date": "2026-07-04T08:28:32.932823",
+  "generated_at": "2026-08-29T00:15:24.062035",
+  "previous_date": "2026-07-28T17:06:18.575733",
   "is_first_run": false,
   "new_companies": [
-    "EMmicroelectronic",
-    "Hangzhou Wistar Mechanical & Electric Technology Co., Ltd",
-    "Qingdao Heffeix Technology Co., Ltd",
-    "Shenzhen Sonoff Technologies Co.,Ltd."
+    "Ellard",
+    "Guangzhou Skydance Co., Ltd",
+    "Shanghai Poyu Intelligent Technology Co., Ltd.",
+    "Shenzhen SDMC Technology Co., Ltd.",
+    "ZIMI INNOVATIONS PTY LTD"
   ],
-  "removed_companies": [
-    "Shenzhen Conex Intelligent Technology Co.,Ltd"
-  ],
+  "removed_companies": [],
   "new_products": [
     {
-      "company": "Amlogic Co., Ltd",
-      "product_name": "Single chip Wireless Series (W265x,W165x)",
-      "device_type": "Chipset",
-      "sub_category": "-",
-      "product_type": "Thread Certified Component"
-    },
-    {
-      "company": "EGLO LEUCHTEN",
-      "product_name": "Controllable Temperature Light",
-      "device_type": "Lighting",
-      "sub_category": "Light, Lighting",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "EMmicroelectronic",
-      "product_name": "em | bleu EM9305",
-      "device_type": "Chipset",
-      "sub_category": "-",
-      "product_type": "Thread Certified Component"
-    },
-    {
-      "company": "Espressif Systems (Shanghai) Co., Ltd.",
-      "product_name": "ESP32 C-series",
-      "device_type": "Chipset",
-      "sub_category": "-",
-      "product_type": "Thread Certified Component"
-    },
-    {
-      "company": "Espressif Systems (Shanghai) Co., Ltd.",
-      "product_name": "Espressif Border Router Assembly (ESP32 C-series Host + ESP32 RCP)",
-      "device_type": "Chipset",
-      "sub_category": "-",
-      "product_type": "Thread Certified Component"
-    },
-    {
-      "company": "Hangzhou Wistar Mechanical & Electric Technology Co., Ltd",
-      "product_name": "Window covering WS001",
+      "company": "Ellard",
+      "product_name": "Matter Blind Motor - 1.1Nm",
       "device_type": "Window covering",
       "sub_category": "Blind",
       "product_type": "Built on Thread"
     },
     {
-      "company": "Qingdao Heffeix Technology Co., Ltd",
-      "product_name": "Heffeix-BR",
+      "company": "Google",
+      "product_name": "Pixel 11 Pro",
       "device_type": "-",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Google",
+      "product_name": "Pixel 11 Pro Fold",
+      "device_type": "-",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Google",
+      "product_name": "Pixel 11 Pro XL",
+      "device_type": "-",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Guangzhou Skydance Co., Ltd",
+      "product_name": "Matter over Thread + RF 5-channel CCT LED Controller",
+      "device_type": "Lighting",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Insta GmbH",
+      "product_name": "Matter Universal dimmer LED",
+      "device_type": "Lighting",
+      "sub_category": "Switch",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Floodlight Cam",
+      "device_type": "-",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Indoor Cam Plug-In",
+      "device_type": "-",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Outdoor Cam Plug-In",
+      "device_type": "-",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Smart Deadbolt Lock",
+      "device_type": "Safety",
+      "sub_category": "Door lock",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Smart Thermostat",
+      "device_type": "HVAC",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Temperature Sensor",
+      "device_type": "Sensor",
+      "sub_category": "Temperature",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "LG Electronics",
+      "product_name": "LG Video Doorbell Wired",
+      "device_type": "-",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "MEAN WELL ENTERPRISES CO., LTD.",
+      "product_name": "LED Driver (SPWM-MA)",
+      "device_type": "Lighting",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "NXP Semiconductors",
+      "product_name": "NXP i.MX RT Crossover MCU + IW610 Tri-Radio OTBR",
+      "device_type": "Chipset",
       "sub_category": "-",
       "product_type": "Thread Certified Component"
     },
     {
-      "company": "Shenzhen Sonoff Technologies Co.,Ltd.",
-      "product_name": "SONOFF Zigbee/Thread Motion Sensor",
-      "device_type": "Sensor",
-      "sub_category": "Presence",
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Smart Bath Heater D1",
+      "device_type": "HVAC",
+      "sub_category": "-",
       "product_type": "Built on Thread"
     },
     {
-      "company": "Shenzhen Sonoff Technologies Co.,Ltd.",
-      "product_name": "Zigbee/Thread Door Window Sensor",
-      "device_type": "Sensor",
-      "sub_category": "Contact",
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Smart Ceiling Light 320",
+      "device_type": "Lighting",
+      "sub_category": "Light",
       "product_type": "Built on Thread"
     },
     {
-      "company": "Tuya Global Inc",
-      "product_name": "Wireless Module E2-U",
+      "company": "Qingdao Yeelink Information Technology Co., Ltd",
+      "product_name": "Yeelight Smart Ceiling Light 450",
+      "device_type": "Lighting",
+      "sub_category": "Light",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Shanghai Poyu Intelligent Technology Co., Ltd.",
+      "product_name": "Morelinks Thread Module (TN54AE)",
       "device_type": "Module",
       "sub_category": "-",
       "product_type": "Thread Certified Component"
-    }
-  ],
-  "removed_products": [
-    {
-      "company": "Espressif Systems (Shanghai) Co., Ltd.",
-      "product_name": "ESP32-C5"
     },
     {
-      "company": "Espressif Systems (Shanghai) Co., Ltd.",
-      "product_name": "ESP32-C6"
+      "company": "Shanghai Poyu Intelligent Technology Co., Ltd.",
+      "product_name": "Morelinks Thread Module (TN54BE)",
+      "device_type": "Module",
+      "sub_category": "-",
+      "product_type": "Thread Certified Component"
     },
     {
-      "company": "Shenzhen Conex Intelligent Technology Co.,Ltd",
-      "product_name": "Philips Smart Lock"
+      "company": "Shenzhen SDMC Technology Co., Ltd.",
+      "product_name": "onn 4K Pro Streaming Device",
+      "device_type": "Infrastructure",
+      "sub_category": "Media streamer",
+      "product_type": "Thread Certified Component"
+    },
+    {
+      "company": "Shenzhen Sonoff Technologies Co.,Ltd.",
+      "product_name": "SONOFF Zigbee/Thread Temperature Sensor",
+      "device_type": "Sensor",
+      "sub_category": "Temperature",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "ZIMI INNOVATIONS PTY LTD",
+      "product_name": "Senoa Matter Power Point",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "tado",
+      "product_name": "Wireless Temperature Sensor X (SU04)",
+      "device_type": "Sensor",
+      "sub_category": "Temperature",
+      "product_type": "Built on Thread"
     }
   ],
+  "removed_products": [],
   "changed_products": [
     {
       "company": "A solution Co., Ltd.",
@@ -104,8 +188,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -115,8 +199,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Irrigation",
-          "new": "-"
+          "old": "-",
+          "new": "Irrigation"
         }
       ]
     },
@@ -126,8 +210,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Irrigation",
-          "new": "-"
+          "old": "-",
+          "new": "Irrigation"
         }
       ]
     },
@@ -137,8 +221,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -148,8 +232,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -159,8 +243,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -170,8 +254,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -181,8 +265,19 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
+        }
+      ]
+    },
+    {
+      "company": "EGLO LEUCHTEN",
+      "product_name": "Controllable Temperature Light",
+      "changes": [
+        {
+          "field": "sub_category",
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -192,8 +287,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -203,8 +298,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -214,8 +309,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Irrigation",
-          "new": "-"
+          "old": "-",
+          "new": "Irrigation"
         }
       ]
     },
@@ -225,8 +320,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -236,8 +331,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -247,8 +342,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -258,8 +353,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -269,8 +364,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -280,8 +375,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -291,8 +386,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -302,8 +397,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -313,8 +408,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -324,8 +419,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -335,8 +430,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Bulb, Light",
-          "new": "Bulb"
+          "old": "Bulb",
+          "new": "Bulb, Light"
         }
       ]
     },
@@ -346,52 +441,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
-        }
-      ]
-    },
-    {
-      "company": "LEEDARSON IoT Technology Inc",
-      "product_name": "Smart Plug",
-      "changes": [
-        {
-          "field": "device_type",
           "old": "-",
-          "new": "Automation control"
-        }
-      ]
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG Smart Button (1 Button)",
-      "changes": [
-        {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        }
-      ]
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG Smart Button (2 Button)",
-      "changes": [
-        {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        }
-      ]
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG Smart Plug",
-      "changes": [
-        {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
+          "new": "Light"
         }
       ]
     },
@@ -401,8 +452,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -412,8 +463,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -423,8 +474,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -434,8 +485,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -445,8 +496,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -456,8 +507,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -467,8 +518,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -477,14 +528,9 @@
       "product_name": "Camera Hub G350",
       "changes": [
         {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        },
-        {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -494,8 +540,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -505,8 +551,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -516,8 +562,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
+          "old": "-",
+          "new": "Light"
         }
       ]
     },
@@ -527,8 +573,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
+          "old": "-",
+          "new": "Light"
         }
       ]
     },
@@ -537,14 +583,9 @@
       "product_name": "DIN Rail Hub AX100M",
       "changes": [
         {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        },
-        {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -553,14 +594,9 @@
       "product_name": "Doorbell Camera Hub G410",
       "changes": [
         {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        },
-        {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -569,14 +605,9 @@
       "product_name": "Edge Hub GX300M",
       "changes": [
         {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        },
-        {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -585,14 +616,9 @@
       "product_name": "Edge Hub M300",
       "changes": [
         {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        },
-        {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -601,14 +627,9 @@
       "product_name": "Hub AX200M",
       "changes": [
         {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        },
-        {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "Hub, Irrigation"
+          "old": "Hub, Irrigation",
+          "new": "Hub"
         }
       ]
     },
@@ -618,8 +639,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
+          "old": "-",
+          "new": "Hub"
         }
       ]
     },
@@ -629,8 +650,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
+          "old": "-",
+          "new": "Light"
         }
       ]
     },
@@ -640,8 +661,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
+          "old": "-",
+          "new": "Light"
         }
       ]
     },
@@ -651,19 +672,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
-        }
-      ]
-    },
-    {
-      "company": "Qingdao Yeelink Information Technology Co., Ltd",
-      "product_name": "Smart Switch",
-      "changes": [
-        {
-          "field": "device_type",
           "old": "-",
-          "new": "Automation control"
+          "new": "Light"
         }
       ]
     },
@@ -673,8 +683,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
+          "old": "-",
+          "new": "Hub"
         }
       ]
     },
@@ -684,8 +694,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
+          "old": "-",
+          "new": "Light"
         }
       ]
     },
@@ -695,8 +705,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
+          "old": "-",
+          "new": "Light"
         }
       ]
     },
@@ -706,30 +716,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
-        }
-      ]
-    },
-    {
-      "company": "Rafael Microelectronics, Inc.",
-      "product_name": "Smart Wall Switch",
-      "changes": [
-        {
-          "field": "device_type",
           "old": "-",
-          "new": "Automation control"
-        }
-      ]
-    },
-    {
-      "company": "Robert Bosch GmbH",
-      "product_name": "Plug Compact [+M]",
-      "changes": [
-        {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
+          "new": "Light"
         }
       ]
     },
@@ -739,8 +727,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
+          "old": "-",
+          "new": "Hub"
         }
       ]
     },
@@ -750,8 +738,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
+          "old": "-",
+          "new": "Hub"
         }
       ]
     },
@@ -761,8 +749,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
+          "old": "-",
+          "new": "Hub"
         }
       ]
     },
@@ -771,14 +759,9 @@
       "product_name": "Samsung SmartThings Hub V3",
       "changes": [
         {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        },
-        {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
+          "old": "-",
+          "new": "Hub"
         }
       ]
     },
@@ -788,8 +771,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
+          "old": "-",
+          "new": "Hub"
         }
       ]
     },
@@ -799,8 +782,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
+          "old": "-",
+          "new": "Hub"
         }
       ]
     },
@@ -810,41 +793,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
-        }
-      ]
-    },
-    {
-      "company": "Shenzhen Haojai Lianchuang Technology Co.,Ltd",
-      "product_name": "HAOJAI Smart Switch",
-      "changes": [
-        {
-          "field": "device_type",
           "old": "-",
-          "new": "Automation control"
-        }
-      ]
-    },
-    {
-      "company": "Shenzhen Heiman Technology Co., Ltd.",
-      "product_name": "Smart Plug (HS2SK series)",
-      "changes": [
-        {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
-        }
-      ]
-    },
-    {
-      "company": "Sleekpoint Innovations Company Limited",
-      "product_name": "Button Controller",
-      "changes": [
-        {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
+          "new": "Hub"
         }
       ]
     },
@@ -854,19 +804,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "Light, Lighting"
-        }
-      ]
-    },
-    {
-      "company": "WAREMA Renkhoff SE",
-      "product_name": "Xeenos Go Aktor Switch 2K UP",
-      "changes": [
-        {
-          "field": "device_type",
-          "old": "-",
-          "new": "Automation control"
+          "old": "Light, Lighting",
+          "new": "Light"
         }
       ]
     },
@@ -876,8 +815,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
+          "old": "-",
+          "new": "Light"
         }
       ]
     },
@@ -887,19 +826,8 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Hub",
-          "new": "-"
-        }
-      ]
-    },
-    {
-      "company": "Zemismart Technology Limited",
-      "product_name": "Zemismart MT01 Slide Curtain",
-      "changes": [
-        {
-          "field": "device_type",
           "old": "-",
-          "new": "Automation control"
+          "new": "Hub"
         }
       ]
     },
@@ -909,32 +837,21 @@
       "changes": [
         {
           "field": "sub_category",
-          "old": "Light",
-          "new": "-"
-        }
-      ]
-    },
-    {
-      "company": "tado",
-      "product_name": "Smart Thermostat X",
-      "changes": [
-        {
-          "field": "device_type",
           "old": "-",
-          "new": "Automation control"
+          "new": "Light"
         }
       ]
     }
   ],
   "stats": {
-    "total_products_new": 448,
-    "total_products_old": 441,
-    "total_companies_new": 132,
-    "total_companies_old": 129,
-    "new_products_count": 10,
-    "removed_products_count": 3,
-    "new_companies_count": 4,
-    "removed_companies_count": 1,
-    "changed_products_count": 72
+    "total_products_new": 472,
+    "total_products_old": 448,
+    "total_companies_new": 137,
+    "total_companies_old": 132,
+    "new_products_count": 24,
+    "removed_products_count": 0,
+    "new_companies_count": 5,
+    "removed_companies_count": 0,
+    "changed_products_count": 60
   }
 }
