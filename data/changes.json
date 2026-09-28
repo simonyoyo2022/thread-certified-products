@@ -1,857 +1,166 @@
 {
-  "generated_at": "2026-08-29T00:15:24.062035",
-  "previous_date": "2026-07-28T17:06:18.575733",
+  "generated_at": "2026-09-28T21:28:27.664037",
+  "previous_date": "2026-08-29T00:15:23.969155",
   "is_first_run": false,
   "new_companies": [
-    "Ellard",
-    "Guangzhou Skydance Co., Ltd",
-    "Shanghai Poyu Intelligent Technology Co., Ltd.",
-    "Shenzhen SDMC Technology Co., Ltd.",
-    "ZIMI INNOVATIONS PTY LTD"
+    "Hangzhou Ezviz Network Co., Ltd",
+    "Schneider Electric",
+    "Zhongshan Leshi IoT Technology Co.,LTD"
   ],
-  "removed_companies": [],
+  "removed_companies": [
+    "NAMI AI",
+    "Shenzhen BOFU smart.co.,ltd",
+    "geo"
+  ],
   "new_products": [
     {
-      "company": "Ellard",
-      "product_name": "Matter Blind Motor - 1.1Nm",
-      "device_type": "Window covering",
-      "sub_category": "Blind",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Google",
-      "product_name": "Pixel 11 Pro",
-      "device_type": "-",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Google",
-      "product_name": "Pixel 11 Pro Fold",
-      "device_type": "-",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Google",
-      "product_name": "Pixel 11 Pro XL",
-      "device_type": "-",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Guangzhou Skydance Co., Ltd",
-      "product_name": "Matter over Thread + RF 5-channel CCT LED Controller",
-      "device_type": "Lighting",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Insta GmbH",
-      "product_name": "Matter Universal dimmer LED",
-      "device_type": "Lighting",
-      "sub_category": "Switch",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG Floodlight Cam",
-      "device_type": "-",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG Indoor Cam Plug-In",
-      "device_type": "-",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG Outdoor Cam Plug-In",
-      "device_type": "-",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG Smart Deadbolt Lock",
+      "company": "Allegion/Schlage Lock Company LLC",
+      "product_name": "Schlage Sense Pro",
       "device_type": "Safety",
       "sub_category": "Door lock",
       "product_type": "Built on Thread"
     },
     {
-      "company": "LG Electronics",
-      "product_name": "LG Smart Thermostat",
+      "company": "BOKE Drivers Co., Ltd",
+      "product_name": "BK-DGES03",
+      "device_type": "Lighting",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Chengdu Meross Technology Co., Ltd",
+      "product_name": "Smart Thermostat",
       "device_type": "HVAC",
       "sub_category": "-",
       "product_type": "Built on Thread"
     },
     {
-      "company": "LG Electronics",
-      "product_name": "LG Temperature Sensor",
-      "device_type": "Sensor",
-      "sub_category": "Temperature",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG Video Doorbell Wired",
-      "device_type": "-",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "MEAN WELL ENTERPRISES CO., LTD.",
-      "product_name": "LED Driver (SPWM-MA)",
-      "device_type": "Lighting",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "NXP Semiconductors",
-      "product_name": "NXP i.MX RT Crossover MCU + IW610 Tri-Radio OTBR",
-      "device_type": "Chipset",
-      "sub_category": "-",
-      "product_type": "Thread Certified Component"
-    },
-    {
-      "company": "Qingdao Yeelink Information Technology Co., Ltd",
-      "product_name": "Yeelight Smart Bath Heater D1",
-      "device_type": "HVAC",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Qingdao Yeelink Information Technology Co., Ltd",
-      "product_name": "Yeelight Smart Ceiling Light 320",
-      "device_type": "Lighting",
-      "sub_category": "Light",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Qingdao Yeelink Information Technology Co., Ltd",
-      "product_name": "Yeelight Smart Ceiling Light 450",
-      "device_type": "Lighting",
-      "sub_category": "Light",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Shanghai Poyu Intelligent Technology Co., Ltd.",
-      "product_name": "Morelinks Thread Module (TN54AE)",
-      "device_type": "Module",
-      "sub_category": "-",
-      "product_type": "Thread Certified Component"
-    },
-    {
-      "company": "Shanghai Poyu Intelligent Technology Co., Ltd.",
-      "product_name": "Morelinks Thread Module (TN54BE)",
-      "device_type": "Module",
-      "sub_category": "-",
-      "product_type": "Thread Certified Component"
-    },
-    {
-      "company": "Shenzhen SDMC Technology Co., Ltd.",
-      "product_name": "onn 4K Pro Streaming Device",
-      "device_type": "Infrastructure",
-      "sub_category": "Media streamer",
-      "product_type": "Thread Certified Component"
-    },
-    {
-      "company": "Shenzhen Sonoff Technologies Co.,Ltd.",
-      "product_name": "SONOFF Zigbee/Thread Temperature Sensor",
-      "device_type": "Sensor",
-      "sub_category": "Temperature",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "ZIMI INNOVATIONS PTY LTD",
-      "product_name": "Senoa Matter Power Point",
+      "company": "Hager group",
+      "product_name": "Socket outlet SCHUKO",
       "device_type": "Automation control",
       "sub_category": "Smart plug",
       "product_type": "Built on Thread"
     },
     {
-      "company": "tado",
-      "product_name": "Wireless Temperature Sensor X (SU04)",
+      "company": "IKEA of Sweden AB",
+      "product_name": "MYGGBETT door/window sensor (E2492)",
       "device_type": "Sensor",
-      "sub_category": "Temperature",
+      "sub_category": "Contact",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "MYGGSPRAY wrlss mtn sensor (E2494)",
+      "device_type": "Sensor",
+      "sub_category": "Presence",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Aqara Smart Constant Current Driver T3 (40W)",
+      "device_type": "Lighting",
+      "sub_category": "-",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Blind Tilt Controller C100",
+      "device_type": "Window covering",
+      "sub_category": "Blind",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Curtain Controller C100",
+      "device_type": "Window covering",
+      "sub_category": "Curtain",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Downlight H1",
+      "device_type": "Lighting",
+      "sub_category": "Light",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Schneider Electric",
+      "product_name": "Funktaster Connected",
+      "device_type": "Automation control",
+      "sub_category": "Switch",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "ZIMI INNOVATIONS PTY LTD",
+      "product_name": "Senoa Matter Switch",
+      "device_type": "Lighting",
+      "sub_category": "Switch",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "Zhongshan Leshi IoT Technology Co.,LTD",
+      "product_name": "Le Light 15T",
+      "device_type": "Lighting",
+      "sub_category": "Light",
       "product_type": "Built on Thread"
     }
   ],
-  "removed_products": [],
-  "changed_products": [
+  "removed_products": [
     {
-      "company": "A solution Co., Ltd.",
-      "product_name": "LumiMatter",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "ABB AG – Busch-Jaeger",
-      "product_name": "Eve Aqua",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Irrigation"
-        }
-      ]
-    },
-    {
-      "company": "ABB AG – Busch-Jaeger",
-      "product_name": "Eve Aqua (v2)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Irrigation"
-        }
-      ]
-    },
-    {
-      "company": "ABB AG – Busch-Jaeger",
-      "product_name": "Eve Flare",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Aeotec Group GmbH",
-      "product_name": "Aeotec Smart Home Hub",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Athom B.V.",
-      "product_name": "Homey Pro (Early 2023)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "BOKE Drivers Co., Ltd",
-      "product_name": "BOKE WTL042S WSL042S Series",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "EGLO LEUCHTEN",
-      "product_name": "Controllable Color Light",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "EGLO LEUCHTEN",
-      "product_name": "Controllable Temperature Light",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Enlight International Ltd.",
-      "product_name": "Smart Ceiling Light",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Espressif Systems (Shanghai) Co., Ltd.",
-      "product_name": "M5Stack Thread Border Router",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Grimsholm Products AB",
-      "product_name": "Smart Irrigation Valve",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Irrigation"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light (Candle lamp)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light (Ceiling light)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light (Filament lamp)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light (Magnetic light fixture)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light (Panel light)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light (Pendant light)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light (Recessed light)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "HooRii Technology Co., Ltd",
-      "product_name": "HooRii Light (Spotlight)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
+      "company": "Allegion/Schlage Lock Company LLC",
+      "product_name": "Schlage Encode Plus Deadbolt"
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "DUBBELKISEL",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
+      "product_name": "MYGGBETT door/window sensor"
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "KAJPLATS WS",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Bulb",
-          "new": "Bulb, Light"
-        }
-      ]
-    },
-    {
-      "company": "IKEA of Sweden AB",
-      "product_name": "VARMBLIXT table/wall lamp",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "LG Electronics",
-      "product_name": "LG webOS TV",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Lab126",
-      "product_name": "Echo (E78T24)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Lab126",
-      "product_name": "Echo (MA49CA)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Lab126",
-      "product_name": "Echo (MD6NE4)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Lab126",
-      "product_name": "Echo (P8Z7MN)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Lab126",
-      "product_name": "Echo (PE4Z26)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
+      "product_name": "MYGGSPRAY wrlss mtn sensor"
     },
     {
       "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Aqara Hub M3",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
+      "product_name": "Edge Hub GX300M"
     },
     {
       "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Camera Hub G350",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
+      "product_name": "Edge Hub M300"
     },
     {
       "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Camera Hub G5 Pro (PoE)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
+      "product_name": "Floor Heating Thermostat W500"
     },
     {
       "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Camera Hub G5 Pro (Wi-Fi)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
+      "product_name": "Hub AX200M"
     },
     {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Constant Current Driver T3 (40W)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
+      "company": "NAMI AI",
+      "product_name": "Mesh Sensor"
     },
     {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Constant Current Driver T3 (75W)",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
+      "company": "Shenzhen BOFU smart.co.,ltd",
+      "product_name": "Blinds motor"
     },
     {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "DIN Rail Hub AX100M",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
+      "company": "geo",
+      "product_name": "geo SeeZero Display"
     },
     {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Doorbell Camera Hub G410",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Edge Hub GX300M",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Edge Hub M300",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Hub AX200M",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Hub, Irrigation",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "MMB Networks",
-      "product_name": "Thread Mesh Extender",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Nanoleaf",
-      "product_name": "Nanoleaf Essentials Smart Ceiling Light",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Nanoleaf",
-      "product_name": "Umbra Cono Lamp",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Nanoleaf",
-      "product_name": "Umbra Cup Lamp",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Qingdao Yeelink Information Technology Co., Ltd",
-      "product_name": "Yeelight Pro Smart Home Hub",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Qingdao Yeelink Information Technology Co., Ltd",
-      "product_name": "Yeelight Smart Ceiling Fan-Light S1",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Qingdao Yeelink Information Technology Co., Ltd",
-      "product_name": "Yeelight Smart LED Bedside Lamp D1",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Qingdao Yeelink Information Technology Co., Ltd",
-      "product_name": "Yeelight Smart LED Desk Lamp D1",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "Samsung SmartThings",
-      "product_name": "Samsung Monitor",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Samsung SmartThings",
-      "product_name": "Samsung Signage",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Samsung SmartThings",
-      "product_name": "Samsung Smart TV",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Samsung SmartThings",
-      "product_name": "Samsung SmartThings Hub V3",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Samsung SmartThings",
-      "product_name": "Samsung SmartThings Station",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Samsung SmartThings",
-      "product_name": "Samsung Soundbar",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Samsung SmartThings",
-      "product_name": "SmartThings Hub V3",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "ThirdReality, Inc.",
-      "product_name": "Smart Night Light-T",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "Light, Lighting",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "What's Matter Inc.",
-      "product_name": "Light Sensor",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
-    },
-    {
-      "company": "WideSky.cloud Pty. Ltd",
-      "product_name": "WideSky Hub",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Hub"
-        }
-      ]
-    },
-    {
-      "company": "Zhejiang Moorgen Group Co., Ltd.",
-      "product_name": "Crystal Series Rechargeable Lamp",
-      "changes": [
-        {
-          "field": "sub_category",
-          "old": "-",
-          "new": "Light"
-        }
-      ]
+      "company": "geo",
+      "product_name": "geo SeeZero Heating Controller"
     }
   ],
+  "changed_products": [],
   "stats": {
-    "total_products_new": 472,
-    "total_products_old": 448,
+    "total_products_new": 474,
+    "total_products_old": 472,
     "total_companies_new": 137,
-    "total_companies_old": 132,
-    "new_products_count": 24,
-    "removed_products_count": 0,
-    "new_companies_count": 5,
-    "removed_companies_count": 0,
-    "changed_products_count": 60
+    "total_companies_old": 137,
+    "new_products_count": 13,
+    "removed_products_count": 11,
+    "new_companies_count": 3,
+    "removed_companies_count": 3,
+    "changed_products_count": 0
   }
 }

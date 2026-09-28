@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-29T00:15:23.969155",
-  "total_products": 480,
+  "last_updated": "2026-09-28T21:28:27.573670",
+  "total_products": 484,
   "total_companies": 137,
   "products": [
     {
@@ -221,11 +221,20 @@
     },
     {
       "company": "Allegion/Schlage Lock Company LLC",
-      "product_name": "Schlage Encode Plus Deadbolt",
+      "product_name": "Schlage Encode Plus",
       "product_type": "Built on Thread",
       "device_type": "Safety",
       "sub_category": "Door lock",
       "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "Allegion/Schlage Lock Company LLC",
+      "product_name": "Schlage Sense Pro",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -370,6 +379,15 @@
       "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "BOKE Drivers Co., Ltd",
+      "product_name": "BK-DGES03",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -559,6 +577,15 @@
       "device_type": "Sensor",
       "sub_category": "Presence",
       "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "Chengdu Meross Technology Co., Ltd",
+      "product_name": "Smart Thermostat",
+      "product_type": "Built on Thread",
+      "device_type": "HVAC",
+      "sub_category": "-",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -765,8 +792,8 @@
       "product_type": "Built on Thread",
       "device_type": "Window covering",
       "sub_category": "Blind",
-      "is_new": true,
-      "company_is_new": true
+      "is_new": false,
+      "company_is_new": false
     },
     {
       "company": "Enlight International Ltd.",
@@ -990,7 +1017,7 @@
       "product_type": "Built on Thread",
       "device_type": "-",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -999,7 +1026,7 @@
       "product_type": "Built on Thread",
       "device_type": "-",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1008,7 +1035,7 @@
       "product_type": "Built on Thread",
       "device_type": "-",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1080,8 +1107,8 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "-",
-      "is_new": true,
-      "company_is_new": true
+      "is_new": false,
+      "company_is_new": false
     },
     {
       "company": "HUZHOU DOORMA INTEL TECH CO LTD",
@@ -1127,6 +1154,24 @@
       "sub_category": "Switch",
       "is_new": false,
       "company_is_new": false
+    },
+    {
+      "company": "Hager group",
+      "product_name": "Socket outlet SCHUKO",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Smart plug",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "Hangzhou Ezviz Network Co., Ltd",
+      "product_name": "Smart Lock",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock",
+      "is_new": false,
+      "company_is_new": true
     },
     {
       "company": "Hangzhou Wistar Mechanical & Electric Technology Co., Ltd",
@@ -1454,20 +1499,20 @@
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "MYGGBETT door/window sensor",
+      "product_name": "MYGGBETT door/window sensor (E2492)",
       "product_type": "Built on Thread",
       "device_type": "Sensor",
       "sub_category": "Contact",
-      "is_new": false,
+      "is_new": true,
       "company_is_new": false
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "MYGGSPRAY wrlss mtn sensor",
+      "product_name": "MYGGSPRAY wrlss mtn sensor (E2494)",
       "product_type": "Built on Thread",
       "device_type": "Sensor",
       "sub_category": "Presence",
-      "is_new": false,
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -1593,7 +1638,7 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "Switch",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1692,7 +1737,7 @@
       "product_type": "Built on Thread",
       "device_type": "-",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1701,7 +1746,7 @@
       "product_type": "Built on Thread",
       "device_type": "-",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1719,7 +1764,7 @@
       "product_type": "Built on Thread",
       "device_type": "-",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1755,7 +1800,7 @@
       "product_type": "Built on Thread",
       "device_type": "Safety",
       "sub_category": "Door lock",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1773,7 +1818,7 @@
       "product_type": "Built on Thread",
       "device_type": "HVAC",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1809,7 +1854,7 @@
       "product_type": "Built on Thread",
       "device_type": "Sensor",
       "sub_category": "Temperature",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1836,7 +1881,7 @@
       "product_type": "Built on Thread",
       "device_type": "-",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2039,6 +2084,15 @@
     },
     {
       "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Aqara Smart Constant Current Driver T3 (40W)",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "-",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
       "product_name": "Aqara Smart Lock J200 / J200 Set",
       "product_type": "Built on Thread",
       "device_type": "Safety",
@@ -2062,6 +2116,15 @@
       "device_type": "Module",
       "sub_category": "-",
       "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Blind Tilt Controller C100",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Blind",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -2120,6 +2183,15 @@
     },
     {
       "company": "Lumi United Technology Co., Ltd",
+      "product_name": "Curtain Controller C100",
+      "product_type": "Built on Thread",
+      "device_type": "Window covering",
+      "sub_category": "Curtain",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "Lumi United Technology Co., Ltd",
       "product_name": "DIN Rail Hub AX100M",
       "product_type": "Thread Certified Component",
       "device_type": "Automation control",
@@ -2156,38 +2228,11 @@
     },
     {
       "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Edge Hub GX300M",
-      "product_type": "Thread Certified Component",
-      "device_type": "Automation control",
-      "sub_category": "Hub",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Edge Hub M300",
-      "product_type": "Thread Certified Component",
-      "device_type": "Automation control",
-      "sub_category": "Hub",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Floor Heating Thermostat W500",
+      "product_name": "Downlight H1",
       "product_type": "Built on Thread",
-      "device_type": "HVAC",
-      "sub_category": "Heating",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Hub AX200M",
-      "product_type": "Thread Certified Component",
-      "device_type": "Automation control",
-      "sub_category": "Hub",
-      "is_new": false,
+      "device_type": "Lighting",
+      "sub_category": "Light",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -2205,7 +2250,7 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2344,15 +2389,6 @@
       "company_is_new": false
     },
     {
-      "company": "NAMI AI",
-      "product_name": "Mesh Sensor",
-      "product_type": "Thread Certified Component",
-      "device_type": "Infrastructure",
-      "sub_category": "Smart plug",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
       "company": "NXP Semiconductors",
       "product_name": "K32W061 / K32W041",
       "product_type": "Thread Certified Component",
@@ -2439,7 +2475,7 @@
       "product_type": "Thread Certified Component",
       "device_type": "Chipset",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2754,7 +2790,7 @@
       "product_type": "Built on Thread",
       "device_type": "HVAC",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2772,7 +2808,7 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "Light",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2781,7 +2817,7 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "Light",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -3145,6 +3181,15 @@
       "company_is_new": false
     },
     {
+      "company": "Schneider Electric",
+      "product_name": "Funktaster Connected",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch",
+      "is_new": true,
+      "company_is_new": true
+    },
+    {
       "company": "Schüco Polymer Technologies KG",
       "product_name": "Schüco Funksensor",
       "product_type": "Built on Thread",
@@ -3186,8 +3231,8 @@
       "product_type": "Thread Certified Component",
       "device_type": "Module",
       "sub_category": "-",
-      "is_new": true,
-      "company_is_new": true
+      "is_new": false,
+      "company_is_new": false
     },
     {
       "company": "Shanghai Poyu Intelligent Technology Co., Ltd.",
@@ -3195,15 +3240,6 @@
       "product_type": "Thread Certified Component",
       "device_type": "Module",
       "sub_category": "-",
-      "is_new": true,
-      "company_is_new": true
-    },
-    {
-      "company": "Shenzhen BOFU smart.co.,ltd",
-      "product_name": "Blinds motor",
-      "product_type": "Built on Thread",
-      "device_type": "Window covering",
-      "sub_category": "Blind",
       "is_new": false,
       "company_is_new": false
     },
@@ -3276,8 +3312,8 @@
       "product_type": "Thread Certified Component",
       "device_type": "Infrastructure",
       "sub_category": "Media streamer",
-      "is_new": true,
-      "company_is_new": true
+      "is_new": false,
+      "company_is_new": false
     },
     {
       "company": "Shenzhen Sonoff Technologies Co.,Ltd.",
@@ -3294,7 +3330,7 @@
       "product_type": "Built on Thread",
       "device_type": "Sensor",
       "sub_category": "Temperature",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -3987,8 +4023,17 @@
       "product_type": "Built on Thread",
       "device_type": "Automation control",
       "sub_category": "Smart plug",
+      "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "ZIMI INNOVATIONS PTY LTD",
+      "product_name": "Senoa Matter Switch",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Switch",
       "is_new": true,
-      "company_is_new": true
+      "company_is_new": false
     },
     {
       "company": "Zemismart Technology Limited",
@@ -4061,6 +4106,15 @@
       "sub_category": "Light",
       "is_new": false,
       "company_is_new": false
+    },
+    {
+      "company": "Zhongshan Leshi IoT Technology Co.,LTD",
+      "product_name": "Le Light 15T",
+      "product_type": "Built on Thread",
+      "device_type": "Lighting",
+      "sub_category": "Light",
+      "is_new": true,
+      "company_is_new": true
     },
     {
       "company": "Zhuhai Ltech Technology Co., Ltd",
@@ -4180,24 +4234,6 @@
       "company_is_new": false
     },
     {
-      "company": "geo",
-      "product_name": "geo SeeZero Display",
-      "product_type": "Built on Thread",
-      "device_type": "HVAC",
-      "sub_category": "-",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
-      "company": "geo",
-      "product_name": "geo SeeZero Heating Controller",
-      "product_type": "Built on Thread",
-      "device_type": "HVAC",
-      "sub_category": "-",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
       "company": "synaptics",
       "product_name": "SYN4384 (as Thread RCP) + [Synaptics Linux host base on Raspberry Pi 4] Border Router",
       "product_type": "Thread Certified Component",
@@ -4311,7 +4347,7 @@
       "product_type": "Built on Thread",
       "device_type": "Sensor",
       "sub_category": "Temperature",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
