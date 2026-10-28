@@ -1,166 +1,123 @@
 {
-  "generated_at": "2026-09-28T21:28:27.664037",
-  "previous_date": "2026-08-29T00:15:23.969155",
+  "generated_at": "2026-10-28T20:31:10.190663",
+  "previous_date": "2026-09-28T21:28:27.573670",
   "is_first_run": false,
-  "new_companies": [
-    "Hangzhou Ezviz Network Co., Ltd",
-    "Schneider Electric",
-    "Zhongshan Leshi IoT Technology Co.,LTD"
-  ],
-  "removed_companies": [
-    "NAMI AI",
-    "Shenzhen BOFU smart.co.,ltd",
-    "geo"
-  ],
+  "new_companies": [],
+  "removed_companies": [],
   "new_products": [
     {
-      "company": "Allegion/Schlage Lock Company LLC",
-      "product_name": "Schlage Sense Pro",
-      "device_type": "Safety",
-      "sub_category": "Door lock",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "BOKE Drivers Co., Ltd",
-      "product_name": "BK-DGES03",
-      "device_type": "Lighting",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Chengdu Meross Technology Co., Ltd",
-      "product_name": "Smart Thermostat",
-      "device_type": "HVAC",
-      "sub_category": "-",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Hager group",
-      "product_name": "Socket outlet SCHUKO",
+      "company": "IKEA of Sweden AB",
+      "product_name": "BILRESA dual button (E2622)",
       "device_type": "Automation control",
-      "sub_category": "Smart plug",
+      "sub_category": "Switch",
       "product_type": "Built on Thread"
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "MYGGBETT door/window sensor (E2492)",
+      "product_name": "BILRESA scroll wheel (E2704)",
+      "device_type": "Automation control",
+      "sub_category": "Switch",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "MYGGBETT door/window sensor (E2705)",
       "device_type": "Sensor",
       "sub_category": "Contact",
       "product_type": "Built on Thread"
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "MYGGSPRAY wrlss mtn sensor (E2494)",
+      "product_name": "MYGGSPRAY wrlss mtn sensor (E2706)",
       "device_type": "Sensor",
       "sub_category": "Presence",
       "product_type": "Built on Thread"
     },
     {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Aqara Smart Constant Current Driver T3 (40W)",
-      "device_type": "Lighting",
+      "company": "PIN Genie Inc, DBA Lockly",
+      "product_name": "Lockly Styla Visage Mortise Edition",
+      "device_type": "Safety",
+      "sub_category": "Door lock",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "STMicroelectronics International N.V.",
+      "product_name": "STM32WB5MMG",
+      "device_type": "Module",
+      "sub_category": "-",
+      "product_type": "Thread Certified Component"
+    },
+    {
+      "company": "Schneider Electric",
+      "product_name": "Energy Data Processor Wireless",
+      "device_type": "Sensor",
       "sub_category": "-",
       "product_type": "Built on Thread"
     },
     {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Blind Tilt Controller C100",
-      "device_type": "Window covering",
-      "sub_category": "Blind",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Curtain Controller C100",
-      "device_type": "Window covering",
-      "sub_category": "Curtain",
-      "product_type": "Built on Thread"
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Downlight H1",
-      "device_type": "Lighting",
-      "sub_category": "Light",
-      "product_type": "Built on Thread"
-    },
-    {
       "company": "Schneider Electric",
-      "product_name": "Funktaster Connected",
+      "product_name": "Temperature/Humidity Sensor",
+      "device_type": "Sensor",
+      "sub_category": "Temperature",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "WM 2Gang Smart Button",
       "device_type": "Automation control",
       "sub_category": "Switch",
       "product_type": "Built on Thread"
     },
     {
-      "company": "ZIMI INNOVATIONS PTY LTD",
-      "product_name": "Senoa Matter Switch",
-      "device_type": "Lighting",
-      "sub_category": "Switch",
+      "company": "What's Matter Inc.",
+      "product_name": "WM CO2 Sensor",
+      "device_type": "Sensor",
+      "sub_category": "Air",
       "product_type": "Built on Thread"
     },
     {
-      "company": "Zhongshan Leshi IoT Technology Co.,LTD",
-      "product_name": "Le Light 15T",
-      "device_type": "Lighting",
-      "sub_category": "Light",
+      "company": "What's Matter Inc.",
+      "product_name": "WM Radar Presence Sensor 2",
+      "device_type": "Sensor",
+      "sub_category": "Presence",
+      "product_type": "Built on Thread"
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "WM Water Leak Detector",
+      "device_type": "Sensor",
+      "sub_category": "Water",
       "product_type": "Built on Thread"
     }
   ],
   "removed_products": [
     {
-      "company": "Allegion/Schlage Lock Company LLC",
-      "product_name": "Schlage Encode Plus Deadbolt"
+      "company": "IKEA of Sweden AB",
+      "product_name": "TIMMERFLOTTE temp/hmd sensor"
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "MYGGBETT door/window sensor"
+      "product_name": "TOFSMYGGA plug"
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "MYGGSPRAY wrlss mtn sensor"
+      "product_name": "TOFSMYGGA plug outdoor"
     },
     {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Edge Hub GX300M"
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Edge Hub M300"
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Floor Heating Thermostat W500"
-    },
-    {
-      "company": "Lumi United Technology Co., Ltd",
-      "product_name": "Hub AX200M"
-    },
-    {
-      "company": "NAMI AI",
-      "product_name": "Mesh Sensor"
-    },
-    {
-      "company": "Shenzhen BOFU smart.co.,ltd",
-      "product_name": "Blinds motor"
-    },
-    {
-      "company": "geo",
-      "product_name": "geo SeeZero Display"
-    },
-    {
-      "company": "geo",
-      "product_name": "geo SeeZero Heating Controller"
+      "company": "IKEA of Sweden AB",
+      "product_name": "VARMBLIXT table/wall lamp"
     }
   ],
   "changed_products": [],
   "stats": {
-    "total_products_new": 474,
-    "total_products_old": 472,
+    "total_products_new": 482,
+    "total_products_old": 474,
     "total_companies_new": 137,
     "total_companies_old": 137,
-    "new_products_count": 13,
-    "removed_products_count": 11,
-    "new_companies_count": 3,
-    "removed_companies_count": 3,
+    "new_products_count": 12,
+    "removed_products_count": 4,
+    "new_companies_count": 0,
+    "removed_companies_count": 0,
     "changed_products_count": 0
   }
 }

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-28T21:28:27.573670",
-  "total_products": 484,
+  "last_updated": "2026-10-28T20:31:10.063122",
+  "total_products": 492,
   "total_companies": 137,
   "products": [
     {
@@ -234,7 +234,7 @@
       "product_type": "Built on Thread",
       "device_type": "Safety",
       "sub_category": "Door lock",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -387,7 +387,7 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -585,7 +585,7 @@
       "product_type": "Built on Thread",
       "device_type": "HVAC",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1161,7 +1161,7 @@
       "product_type": "Built on Thread",
       "device_type": "Automation control",
       "sub_category": "Smart plug",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -1171,7 +1171,7 @@
       "device_type": "Safety",
       "sub_category": "Door lock",
       "is_new": false,
-      "company_is_new": true
+      "company_is_new": false
     },
     {
       "company": "Hangzhou Wistar Mechanical & Electric Technology Co., Ltd",
@@ -1391,11 +1391,29 @@
     },
     {
       "company": "IKEA of Sweden AB",
+      "product_name": "BILRESA dual button (E2622)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "IKEA of Sweden AB",
       "product_name": "BILRESA scroll wheel",
       "product_type": "Built on Thread",
       "device_type": "Automation control",
       "sub_category": "Switch",
       "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "BILRESA scroll wheel (E2704)",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -1503,6 +1521,15 @@
       "product_type": "Built on Thread",
       "device_type": "Sensor",
       "sub_category": "Contact",
+      "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "IKEA of Sweden AB",
+      "product_name": "MYGGBETT door/window sensor (E2705)",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Contact",
       "is_new": true,
       "company_is_new": false
     },
@@ -1512,43 +1539,16 @@
       "product_type": "Built on Thread",
       "device_type": "Sensor",
       "sub_category": "Presence",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
       "company": "IKEA of Sweden AB",
-      "product_name": "TIMMERFLOTTE temp/hmd sensor",
+      "product_name": "MYGGSPRAY wrlss mtn sensor (E2706)",
       "product_type": "Built on Thread",
       "device_type": "Sensor",
-      "sub_category": "Temperature",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
-      "company": "IKEA of Sweden AB",
-      "product_name": "TOFSMYGGA plug",
-      "product_type": "Built on Thread",
-      "device_type": "Automation control",
-      "sub_category": "Smart plug",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
-      "company": "IKEA of Sweden AB",
-      "product_name": "TOFSMYGGA plug outdoor",
-      "product_type": "Built on Thread",
-      "device_type": "Automation control",
-      "sub_category": "Smart plug",
-      "is_new": false,
-      "company_is_new": false
-    },
-    {
-      "company": "IKEA of Sweden AB",
-      "product_name": "VARMBLIXT table/wall lamp",
-      "product_type": "Built on Thread",
-      "device_type": "Lighting",
-      "sub_category": "Light",
-      "is_new": false,
+      "sub_category": "Presence",
+      "is_new": true,
       "company_is_new": false
     },
     {
@@ -2088,7 +2088,7 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "-",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2124,7 +2124,7 @@
       "product_type": "Built on Thread",
       "device_type": "Window covering",
       "sub_category": "Blind",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2187,7 +2187,7 @@
       "product_type": "Built on Thread",
       "device_type": "Window covering",
       "sub_category": "Curtain",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2232,7 +2232,7 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "Light",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -2740,6 +2740,15 @@
       "company_is_new": false
     },
     {
+      "company": "PIN Genie Inc, DBA Lockly",
+      "product_name": "Lockly Styla Visage Mortise Edition",
+      "product_type": "Built on Thread",
+      "device_type": "Safety",
+      "sub_category": "Door lock",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
       "company": "Qingdao Heffeix Technology Co., Ltd",
       "product_name": "Heffeix-BR",
       "product_type": "Thread Certified Component",
@@ -3065,6 +3074,15 @@
     },
     {
       "company": "STMicroelectronics International N.V.",
+      "product_name": "STM32WB5MMG",
+      "product_type": "Thread Certified Component",
+      "device_type": "Module",
+      "sub_category": "-",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "STMicroelectronics International N.V.",
       "product_name": "STM32WBA",
       "product_type": "Thread Certified Component",
       "device_type": "Chipset",
@@ -3182,12 +3200,30 @@
     },
     {
       "company": "Schneider Electric",
+      "product_name": "Energy Data Processor Wireless",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "-",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "Schneider Electric",
       "product_name": "Funktaster Connected",
       "product_type": "Built on Thread",
       "device_type": "Automation control",
       "sub_category": "Switch",
+      "is_new": false,
+      "company_is_new": false
+    },
+    {
+      "company": "Schneider Electric",
+      "product_name": "Temperature/Humidity Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Temperature",
       "is_new": true,
-      "company_is_new": true
+      "company_is_new": false
     },
     {
       "company": "Schüco Polymer Technologies KG",
@@ -3938,6 +3974,42 @@
     },
     {
       "company": "What's Matter Inc.",
+      "product_name": "WM 2Gang Smart Button",
+      "product_type": "Built on Thread",
+      "device_type": "Automation control",
+      "sub_category": "Switch",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "WM CO2 Sensor",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Air",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "WM Radar Presence Sensor 2",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Presence",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "What's Matter Inc.",
+      "product_name": "WM Water Leak Detector",
+      "product_type": "Built on Thread",
+      "device_type": "Sensor",
+      "sub_category": "Water",
+      "is_new": true,
+      "company_is_new": false
+    },
+    {
+      "company": "What's Matter Inc.",
       "product_name": "Window and Door Sensor",
       "product_type": "Built on Thread",
       "device_type": "Sensor",
@@ -4032,7 +4104,7 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "Switch",
-      "is_new": true,
+      "is_new": false,
       "company_is_new": false
     },
     {
@@ -4113,8 +4185,8 @@
       "product_type": "Built on Thread",
       "device_type": "Lighting",
       "sub_category": "Light",
-      "is_new": true,
-      "company_is_new": true
+      "is_new": false,
+      "company_is_new": false
     },
     {
       "company": "Zhuhai Ltech Technology Co., Ltd",
